@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Mednet</title>
+	<meta name="description" content="Landing page for x. We do Y. Coming soon. Whatever." />
+
+	<!-- Google Web Fonts
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700|Bree+Serif|Muli' rel='stylesheet' type='text/css'>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS Stylesheets
+  ================================================== -->
+	<link rel="stylesheet" href="assets/css/resets.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="assets/css/media-queries.css" type="text/css" media="screen" />
+
+	<link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen"/> <!-- Image Gallery -->
+
+	<!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="assets/js/selectivizr.min.js"></script>
+	<![endif]-->
+
+	<!-- Javascript
+  ================================================== -->
+	<script src='assets/js/jquery.min.js'></script>
+	<!-- <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+	<!-- <script src="assets/js/supersized.js"></script> -->
+	<script src="assets/js/tweet.js"></script>
+	<!-- <script src="assets/js/countdown.min.js"></script> -->
+	<script src="assets/js/prettyphoto.js"></script>
+	<script src="assets/js/corea3dc.js"></script>
+
+	<style>
+
+		#head  {
+			background:url('assets/img/slider/9.jpg');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		/** Changing colours from the default RED to BLUE **/
+
+		::-moz-selection{background:#59abec;color:#fff;text-shadow:none}
+		::selection{background:#59abec;color:#fff;text-shadow:none}
+
+		.logotext.square:hover h1,
+		.logotext.oval:hover h1 {
+			background:#59abec;
+		}
+
+		.logotext.square h1 {
+			background:#59abec;
+		}
+
+		.logotext.square h1:hover {
+			background:rgba(0,0,0,0.5)
+		}
+
+		#head .message p,
+		.newsletter {
+			color:rgba(0,0,0,0.9)
+		}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#41a4eb;
+			background-image:-webkit-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-moz-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-ms-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-o-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			border-bottom-color:#2a6294;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#59abec !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#3681c3 !important;
+			border-bottom-color:#2a6294;
+		}
+
+		.hexagon {background:#41a4eb;}
+		.hexagon:before {border-bottom-color: #41a4eb}
+		.hexagon:after {border-top-color: #41a4eb}
+
+		#pricing-table .popular h3 {
+			background-color:#41a4eb;
+			background-image:-webkit-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-moz-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-ms-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:-o-linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+			background-image:linear-gradient(top, #59abec 0%, #59abec 80%, #3681c3 100%);
+		}
+
+		.social li a { background:#41a4eb }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#41a4eb;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<header id="head">
+
+		<div class="inner">
+			<a href="#" class="logotext square"><h1>Mednet</h1></a>
+			<div class="details left">
+
+				<div class="message">
+					<p class="large">A network to connect all physicians.</p>
+					<p class="small">Professional healthcare is constantly changing and healthcare professionals are required to adopt faster and faster. We are a startup business and want to change the way physicians communicate and share their professional stories and challenges.</p>
+				</div>
+
+				<!-- Newsletter -->
+				<form class="newsletter" id="subscribe">
+					<input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Notify Me</button>
+					<p class="note">We will send you an email, once the product is ready.</p>
+				</form>
+
+			</div>
+		</div>
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>How Mednet will change the world of professional healthcare</strong></span></h2>
+						<p class="small">As we are designing and developing our system, we are getting feedback from medical professionals around the world.</p>
+
+						<ul class="features">
+							<li>
+								<div class="hexagon"><span class="draw"></span></div>
+								<p>
+									<strong>Build your profile</strong>
+									Showcase your professional experience and achievements by filling out your personal profile. Be up to date with what your colleagues are doing by viewing their profiles.
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="idea"></span></div>
+								<p>
+									<strong>Share information</strong>
+									Knowledge and information are the most valuable resources in the job of a physician. Share your experiences or see what others are sharing.
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="comments"></span></div>
+								<p>
+									<strong>Be mobile</strong>
+									Professional healthcare is getting more and more dynamic and as a result, people in the medical industry are getting more and more mobile. Mednet will be with you everywhere you go.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+				<ul class="social">
+					<!--
+					<li class="icq"><a href="#">ICQ</a></li>
+					<li class="vkontakte-rect"><a href="#">Vkontakte</a></li>
+					<li class="odnoklassniki"><a href="#">Odnoklassniki</a></li>
+					<li class="friendfeed"><a href="#">Friendfeed</a></li>
+					<li class="blogger"><a href="#">Blogger</a></li>
+					<li class="jabber"><a href="#">Jabber</a></li>
+					<li class="picasa"><a href="#">Picasa</a></li>
+					<li class="wordpress"><a href="#">Wordpress</a></li>
+					<li class="deviantart"><a href="#">Deviantart</a></li>
+					<li class="tumbler"><a href="#">Tumbler</a></li>
+					<li class="youtube"><a href="#">Youtube</a></li>
+					-->
+					<li class="twitter"><a href="#">Twitter</a></li>
+					<li class="facebook"><a href="#">Facebook</a></li>
+				</ul>
+
+				<div class="copyright">
+					<p>&copy; 2013 <a href="http://danielhellier.com/">AlPaNiSt</a>.</p>
+					<p>All Rights Reserved.</p>
+				</div>
+
+		</div>
+	</section>
+
+	<script src="assets/js/corea3dc.js"></script>
+</body>
+</html>
