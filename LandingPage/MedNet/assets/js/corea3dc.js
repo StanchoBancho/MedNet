@@ -284,7 +284,8 @@ if ($('#subscribe').is(":visible")) {
         $.ajax({
             type: "post",
             dataType: "json",
-            url: "http://medicus.comli.com/save-email.php",
+             //url: "http://medicus.comli.com/save-email.php",
+            url: "http://localhost/MedNet/LandingPage/MedNet/save-email.php",
             data: $("#subscribe").serialize(),
 			success: function(data) {
 				alert(data.msg);
