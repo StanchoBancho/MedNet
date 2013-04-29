@@ -9,8 +9,8 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Mednet</title>
-	<meta name="description" content="Landing page for x. We do Y. Coming soon. Whatever." />
+	<title>Doctors Break</title>
+	<meta name="description" content="Landing page for the Doctors Break professional network for medical doctors. We connect medical doctors in one place. Coming soon." />
 
 	<!-- Google Web Fonts
   ================================================== -->
@@ -45,6 +45,19 @@
 	<!-- <script src="assets/js/countdown.min.js"></script> -->
 	<script src="assets/js/prettyphoto.js"></script>
 	<script src="assets/js/corea3dc.js"></script>
+	
+	<script type="text/javascript">
+		function swapImage(name, primary, secondary) {
+			className = document.getElementById(name).getAttribute("class");
+			
+			if (className.match(primary)) {
+				document.getElementById(name).setAttribute("class", secondary)
+			} 
+			else {
+				document.getElementById(name).setAttribute("class", primary);
+			}
+		}
+	</script>
 
 	<style>
 
@@ -57,6 +70,14 @@
 		}
 
 		/** Changing colours from the default RED to BLUE **/
+		
+		.clicked {
+			background:url('assets/img/slider/1.jpg');
+		}
+
+		.notClicked {
+			background:url('assets/img/slider/2.jpg');
+		}
 
 		::-moz-selection{background:#59abec;color:#fff;text-shadow:none}
 		::selection{background:#59abec;color:#fff;text-shadow:none}
@@ -72,6 +93,10 @@
 
 		.logotext.square h1:hover {
 			background:rgba(0,0,0,0.5)
+		}
+		
+		.logotext.oval h1 {
+			background:#59abec;
 		}
 
 		#head .message p,
@@ -132,10 +157,10 @@
 </head>
 <body>
 
-	<header id="head">
+	<header id="head" class="clicked">
 
 		<div class="inner">
-			<a href="#" class="logotext square"><h1>Mednet</h1></a>
+			<a href="#" onclick="swapImage('head', 'clicked', 'notClicked')" class="logotext oval"><h1>Doctors Break</h1></a>
 			<div class="details left">
 
 				<div class="message">
@@ -146,7 +171,7 @@
 				<!-- Newsletter -->
 				<form class="newsletter" id="subscribe">
 					<input type="email" id="email" name="email" class="email" placeholder="Enter your email..." /> <button>Notify Me</button>
-					<p class="note">We will send you an email, once the product is ready.</p>
+					<p class="note">We will send you an email, once Doctors Break service is ready.</p>
 				</form>
 
 			</div>
