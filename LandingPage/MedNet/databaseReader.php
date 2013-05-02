@@ -15,9 +15,16 @@ class DataBaseReader
 	{
 		$logText = 'Opitvam da se connectna'; 
 		DataBaseReader::logText($logText);
-		mysql_connect("localhost", "root", "kr0k0d1l") or die(mysql_error());
-		//mysql_connect("mysql6.000webhost.com", "a1087829_user", "kr0k0d1l");
-		mysql_select_db("a1087829_db");
+		
+		//this will connect us to the local host
+		//mysql_connect("localhost", "root", "kr0k0d1l") or die(mysql_error());
+		//mysql_select_db("a1087829_db");
+
+		//this will connect us doctorsbraek.com
+		mysql_connect("localhost", "doctorsb_root", "M0*qpkEqlxHU");
+		mysql_select_db("doctorsb_database");
+		
+		
 		$logText1 = 'Uspqh da se connectna'; 
 		DataBaseReader::logText($logText1);
 	}

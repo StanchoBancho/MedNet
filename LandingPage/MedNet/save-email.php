@@ -1,5 +1,5 @@
 <?php
-include 'databasereader.php';
+include 'databaseReader.php';
 
 $logText = 'I am in save-email.php\n'; 
 		DataBaseReader::logText($logText);
