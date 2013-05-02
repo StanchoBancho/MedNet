@@ -284,8 +284,8 @@ if ($('#subscribe').is(":visible")) {
         $.ajax({
             type: "post",
             dataType: "json",
-            url: "http://doctorsbreak.com/save-email.php",
-            //url: "http://localhost/MedNet/LandingPage/MedNet/save-email.php",
+            url: "http://doctorsbreak.com/assets/php/saveEmail.php",
+//             url: "http://localhost/MedNet/LandingPage/MedNet/asset/php/saveEmail.php",
             data: $("#subscribe").serialize(),
 			success: function(data) {
 				alert(data.msg);

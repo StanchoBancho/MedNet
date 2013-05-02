@@ -4,6 +4,7 @@ class DataBaseReader
 
 	public static function logText($text)
 	{
+		//$file = 'localhost/MedNet/LandingPage/MedNet/serverInfo.log ';
 		$file = 'serverInfo.log';
 		// Write the contents to the file, 
 		// using the FILE_APPEND flag to append the content to the end of the file
@@ -17,12 +18,12 @@ class DataBaseReader
 		DataBaseReader::logText($logText);
 		
 		//this will connect us to the local host
-		//mysql_connect("localhost", "root", "kr0k0d1l") or die(mysql_error());
-		//mysql_select_db("a1087829_db");
+//		mysql_connect("localhost", "root", "kr0k0d1l") or die(mysql_error());
+//		mysql_select_db("a1087829_db");
 
 		//this will connect us doctorsbraek.com
-		mysql_connect("localhost", "doctorsb_root", "M0*qpkEqlxHU");
-		mysql_select_db("doctorsb_database");
+	    mysql_connect("localhost", "doctorsb_root", "M0*qpkEqlxHU");
+ 		mysql_select_db("doctorsb_database");
 		
 		
 		$logText1 = 'Uspqh da se connectna'; 
