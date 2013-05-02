@@ -3,7 +3,7 @@
 
 $(function($){
     $(".tweet").tweet({
-        username: "envatowebdev",
+        username: "DoctorsBreak",
         join_text: "auto",
         count: 1,
         loading_text: "loading tweets...",

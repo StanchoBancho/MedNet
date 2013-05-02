@@ -50,7 +50,7 @@ class DataBaseReader
 	
 	public static function isUserRegistered($userMail)
 	{
-		$logText1 = 'Check is user:'.$userMail.' connected'; 
+		$logText1 = 'Check is user:'.$userMail.' registered'; 
  		DataBaseReader::logText($logText1);
 		$selectQuery = "SELECT * FROM Users WHERE email = '$userMail'";
 		$rowData = mysql_query($selectQuery);
