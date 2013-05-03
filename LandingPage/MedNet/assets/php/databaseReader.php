@@ -42,7 +42,7 @@ class DataBaseReader
 		$selectQuery = "SELECT count(*) From Users";
 		DataBaseReader::connectToDataBase();
 		$result = mysql_query($selectQuery) or die(mysql_error());
-		$logText = 'Get all user count is'.$result; 
+		$logText = 'Get all user count is '.$result; 
 		DataBaseReader::logText($logText);
 		$result += 500;
 		return $result;
@@ -50,7 +50,7 @@ class DataBaseReader
 	
 	public static function isUserRegistered($userMail)
 	{
-		$logText1 = 'Check is user:'.$userMail.' registered'; 
+		$logText1 = 'Check is user: '.$userMail.' registered'; 
  		DataBaseReader::logText($logText1);
 		$selectQuery = "SELECT * FROM Users WHERE email = '$userMail'";
 		$rowData = mysql_query($selectQuery);
@@ -76,7 +76,7 @@ class DataBaseReader
 			{	
 				$currentVisitsCount =  $row[0];
 				$currentVisitsCount += 1;
-				$text = "Increment user visitations of user".$userMail." count:".$currentVisitsCount;
+				$text = "Increment user visitations of user: ".$userMail." to :".$currentVisitsCount. " visists";
 				DataBaseReader::logText($text);
 				$incrementVisitsCountSQL="UPDATE Users SET(visits_count = $currentVisitsCount) WHERE('userMail' = $userMail)";	
 				$resultOfRegistration = mysql_query($incrementVisitsCountSQL);
@@ -89,12 +89,12 @@ class DataBaseReader
 	
 	public static function registerUser($userMail)
 	{
-		$logText1 = 'Add new user:'.$userMail; 
+		$logText1 = 'Add new user: '.$userMail; 
  		DataBaseReader::logText($logText1);
 		//add new user
 		$sql="INSERT INTO Users (email, visits_count) VALUES('$userMail', 1)";
 		$resultOfRegistration=mysql_query($sql);
-		$text = "Register user:".$userMail." status:".$resultOfRegistration;
+		$text = "Register that user finished with status: ".$resultOfRegistration;
 		DataBaseReader::logText($text);		
 		return $resultOfRegistration;
 	}
