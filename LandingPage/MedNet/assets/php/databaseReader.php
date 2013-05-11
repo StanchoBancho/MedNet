@@ -78,7 +78,7 @@ class DataBaseReader
 				$currentVisitsCount += 1;
 				$text = "Increment user visitations of user: ".$userMail." to :".$currentVisitsCount. " visists";
 				DataBaseReader::logText($text);
-				$incrementVisitsCountSQL="UPDATE Users SET(visits_count = $currentVisitsCount) WHERE('userMail' = $userMail)";	
+				$incrementVisitsCountSQL="UPDATE Users SET(visits_count = ".$currentVisitsCount.") WHERE('userMail' = $userMail)";	
 				$resultOfRegistration = mysql_query($incrementVisitsCountSQL);
 				return $resultOfRegistration;
 			}	
