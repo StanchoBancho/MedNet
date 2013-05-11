@@ -1,6 +1,7 @@
-
+.DS_Store
+build/
+*.pbxuser
+xcuserdata/
 LandingPage/MedNet/assets/img/slider/.DS_Store
 
-*.xcuserstate
-
-iOS Prototype/DoctorsBreak/DoctorsBreak.xcodeproj/xcuserdata/stanimirnikolov.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+iOS Prototype/DoctorsBreak/DoctorsBreak.xcodeproj/project.xcworkspace/xcuserdata/stanimirnikolov.xcuserdatad/UserInterfaceState.xcuserstate
