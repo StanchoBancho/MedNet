@@ -17,11 +17,11 @@ else {
 	if($result == true)
 	{
 		$result = DataBaseReader::incrementUsersVisits($email);
-		$return['msg'] = 'You\'re already registered with this email: '. $email . '. But it is good that you did it again';
+		$return['msg'] = 'Вие вече сте абониран за получаване на известия с този е-мейл: '. $email . '. Благодарим ви за проявеният интерес.';
 	}
 	else{
 		$result = DataBaseReader::registerUser($email);
-		$return['msg'] = 'Congratulations. We will notify you on this email: '. $email. '.';
+		$return['msg'] = 'Вие се абонирахте успешно за получаване на известия на е-мейл адрес: '. $email;
 	}
 } 
 echo json_encode($return);

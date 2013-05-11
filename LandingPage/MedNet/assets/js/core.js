@@ -282,11 +282,11 @@ if ($('#subscribe').is(":visible")) {
         $.ajax({
             type: "post",
             dataType: "json",
-            url: "http://medicus.comli.com/save-email.php",
+            url: "http://doctorsbreak.com/assets/php/saveEmail.php",
             data: $("#subscribe").serialize(),
             success: function(data) {
 
-                $('#subscribe').html('<p class="medium">We will notify you upon release. Thank you.</p>');
+                $('#subscribe').html('<p class="medium">Ще ви информираме за развитието на DoctorsBreak. Благодарим ви.</p>');
 
             }
         });

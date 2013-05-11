@@ -289,7 +289,7 @@ if ($('#subscribe').is(":visible")) {
             data: $("#subscribe").serialize(),
 			success: function(data) {
 				alert(data.msg);
-				$('#subscribe').html('<p class="medium">We will notify you upon release. Thank you.</p>');
+				$('#subscribe').html('<p class="medium">Ще ви информираме за развитието на DoctorsBreak. Благодарим ви.</p>');
             }
         });
         return false;
