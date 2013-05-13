@@ -13,6 +13,9 @@
 @end
 
 @implementation ChangePasswordViewController
+@synthesize textFieldOldPass = _textFieldOldPass;
+@synthesize textFieldNewPass = _textFieldNewPass;
+@synthesize textFieldConfirmedPass = _textFieldConfirmedPass;
 
 - (void)viewDidLoad
 {
@@ -31,5 +34,14 @@
     [super viewWillAppear:animated];
     self.view.backgroundColor =  [UIColor colorWithPatternImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"2.jpg"]]];
 }
+
+- (IBAction)cancelButton:(id)sender
+{
+    [[self presentingViewController] dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
 
 @end

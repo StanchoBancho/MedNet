@@ -10,4 +10,9 @@
 
 @interface ProfileViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *specialist;
+@property (strong, nonatomic) IBOutlet UITextField *officeHours;
+@property (strong, nonatomic) IBOutlet UITextField *email;
+@property (strong, nonatomic) IBOutlet UITextView *certificates;
+
 @end

@@ -27,9 +27,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-
+- (IBAction)addCertificate:(id)sender {
 }
+
 
 @end
