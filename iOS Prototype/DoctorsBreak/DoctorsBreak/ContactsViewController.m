@@ -14,13 +14,11 @@
 
 @implementation ContactsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewWillAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [super viewWillAppear:animated];
+    UIImageView *view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]];
+    self.tableView.backgroundView = view;
 }
 
 - (void)viewDidLoad
@@ -33,6 +31,42 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    return [[defaults objectForKey:@"collegues"] count];
+    return 20;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Collegue";
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure the cell...
+//    cell.textLabel.text = [[defaults objectForKey:@"collegues"] objectAtIndex:indexPath.row];
+    cell.textLabel.text = @"Ivan Ivanov";
+    
+    return cell;
+}
+
+-(void) updateTableView
+{
+    [self.tableView reloadData];
 }
 
 @end

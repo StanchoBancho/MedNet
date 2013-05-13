@@ -28,11 +28,14 @@
 		2EEC6976173E4AB1007200A4 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6974173E4AB1007200A4 /* NewsFeedViewController.m */; };
 		2EEC6977173E4AB1007200A4 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC6975173E4AB1007200A4 /* NewsFeedViewController.xib */; };
 		2EEC697F173E4BA8007200A4 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC697D173E4BA8007200A4 /* ContactsViewController.m */; };
-		2EEC6980173E4BA8007200A4 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC697E173E4BA8007200A4 /* ContactsViewController.xib */; };
 		2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6983173E4CD0007200A4 /* ProfileViewController.m */; };
-		2EEC6986173E4CD0007200A4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC6984173E4CD0007200A4 /* ProfileViewController.xib */; };
 		2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6989173E4D22007200A4 /* MessagesViewController.m */; };
 		2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC698A173E4D22007200A4 /* MessagesViewController.xib */; };
+		A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */; };
+		A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */; };
+		A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272917416F77004F4AB5 /* 1.jpg */; };
+		A4A6272C17416F7F004F4AB5 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272B17416F7F004F4AB5 /* 2.jpg */; };
+		A4C17EE517400868002F922D /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A4C17EE417400868002F922D /* images-1.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,13 +68,17 @@
 		2EEC6975173E4AB1007200A4 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 		2EEC697C173E4BA8007200A4 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		2EEC697D173E4BA8007200A4 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
-		2EEC697E173E4BA8007200A4 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		2EEC6982173E4CD0007200A4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		2EEC6983173E4CD0007200A4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		2EEC6984173E4CD0007200A4 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		2EEC6988173E4D22007200A4 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		2EEC6989173E4D22007200A4 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		2EEC698A173E4D22007200A4 /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		A4A6272417415A48004F4AB5 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-color-wallpaper-7.jpg"; sourceTree = "<group>"; };
+		A4A6272917416F77004F4AB5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A4A6272B17416F7F004F4AB5 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		A4C17EE417400868002F922D /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +153,10 @@
 		2ED0C0F7173AF3C700661DF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A4C17EE417400868002F922D /* images-1.jpeg */,
+				A4A6272917416F77004F4AB5 /* 1.jpg */,
+				A4A6272B17416F7F004F4AB5 /* 2.jpg */,
+				A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */,
 				2ED0C0E7173AF34D00661DF7 /* first.png */,
 				2ED0C0E9173AF34D00661DF7 /* first@2x.png */,
 				2ED0C0EE173AF34D00661DF7 /* second.png */,
@@ -217,7 +228,6 @@
 			children = (
 				2EEC697C173E4BA8007200A4 /* ContactsViewController.h */,
 				2EEC697D173E4BA8007200A4 /* ContactsViewController.m */,
-				2EEC697E173E4BA8007200A4 /* ContactsViewController.xib */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -227,7 +237,8 @@
 			children = (
 				2EEC6982173E4CD0007200A4 /* ProfileViewController.h */,
 				2EEC6983173E4CD0007200A4 /* ProfileViewController.m */,
-				2EEC6984173E4CD0007200A4 /* ProfileViewController.xib */,
+				A4A6272417415A48004F4AB5 /* ChangePasswordViewController.h */,
+				A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -305,9 +316,11 @@
 				2ED0C0FD173AF40A00661DF7 /* LoginViewController.xib in Resources */,
 				2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */,
 				2EEC6977173E4AB1007200A4 /* NewsFeedViewController.xib in Resources */,
-				2EEC6980173E4BA8007200A4 /* ContactsViewController.xib in Resources */,
-				2EEC6986173E4CD0007200A4 /* ProfileViewController.xib in Resources */,
 				2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */,
+				A4C17EE517400868002F922D /* images-1.jpeg in Resources */,
+				A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */,
+				A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */,
+				A4A6272C17416F7F004F4AB5 /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +339,7 @@
 				2EEC697F173E4BA8007200A4 /* ContactsViewController.m in Sources */,
 				2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */,
 				2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */,
+				A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
