@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E759734174924A600594665 /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E759733174924A600594665 /* Logo.jpg */; };
 		2ED0C0CA173AF34D00661DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0C9173AF34D00661DF7 /* UIKit.framework */; };
 		2ED0C0CC173AF34D00661DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0CB173AF34D00661DF7 /* Foundation.framework */; };
 		2ED0C0CE173AF34D00661DF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0CD173AF34D00661DF7 /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		2ED0C0EF173AF34D00661DF7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C0EE173AF34D00661DF7 /* second.png */; };
 		2ED0C0F1173AF34D00661DF7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C0F0173AF34D00661DF7 /* second@2x.png */; };
 		2ED0C0FC173AF40A00661DF7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0C0FA173AF40A00661DF7 /* LoginViewController.m */; };
-		2ED0C0FD173AF40A00661DF7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0C0FB173AF40A00661DF7 /* LoginViewController.xib */; };
 		2EEC6970173E4A92007200A4 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC696E173E4A92007200A4 /* BrowseViewController.m */; };
 		2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC696F173E4A92007200A4 /* BrowseViewController.xib */; };
 		2EEC6976173E4AB1007200A4 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6974173E4AB1007200A4 /* NewsFeedViewController.m */; };
@@ -39,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E759733174924A600594665 /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo.jpg; sourceTree = "<group>"; };
 		2ED0C0C6173AF34D00661DF7 /* DoctorsBreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorsBreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED0C0C9173AF34D00661DF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2ED0C0CB173AF34D00661DF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,7 +60,6 @@
 		2ED0C0F0173AF34D00661DF7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		2ED0C0F9173AF40A00661DF7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		2ED0C0FA173AF40A00661DF7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		2ED0C0FB173AF40A00661DF7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2EEC696D173E4A92007200A4 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
 		2EEC696E173E4A92007200A4 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
 		2EEC696F173E4A92007200A4 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = "<group>"; };
@@ -153,6 +153,7 @@
 		2ED0C0F7173AF3C700661DF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E759733174924A600594665 /* Logo.jpg */,
 				A4C17EE417400868002F922D /* images-1.jpeg */,
 				A4A6272917416F77004F4AB5 /* 1.jpg */,
 				A4A6272B17416F7F004F4AB5 /* 2.jpg */,
@@ -218,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				2ED0C0E1173AF34D00661DF7 /* MainStoryboard.storyboard */,
-				2ED0C0FB173AF40A00661DF7 /* LoginViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -313,7 +313,6 @@
 				2ED0C0EA173AF34D00661DF7 /* first@2x.png in Resources */,
 				2ED0C0EF173AF34D00661DF7 /* second.png in Resources */,
 				2ED0C0F1173AF34D00661DF7 /* second@2x.png in Resources */,
-				2ED0C0FD173AF40A00661DF7 /* LoginViewController.xib in Resources */,
 				2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */,
 				2EEC6977173E4AB1007200A4 /* NewsFeedViewController.xib in Resources */,
 				2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */,
@@ -321,6 +320,7 @@
 				A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */,
 				A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */,
 				A4A6272C17416F7F004F4AB5 /* 2.jpg in Resources */,
+				2E759734174924A600594665 /* Logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

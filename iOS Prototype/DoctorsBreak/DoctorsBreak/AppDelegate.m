@@ -23,33 +23,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    MessagesViewController* mesages = [[MessagesViewController alloc] initWithNibName:@"MessagesViewController" bundle:nil];
-//    UITabBarItem* messagesItem = [[UITabBarItem alloc] initWithTitle:@"Messages" image:[UIImage imageNamed:@"first"] tag:3];
-//    [mesages setTabBarItem:messagesItem];
-//
-//    ProfileViewController* profile = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
-//    UITabBarItem* profileItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:[UIImage imageNamed:@"first"] tag:0];
-//    [profile setTabBarItem:profileItem];
-//    
-//    ContactsViewController* contacts = [[ContactsViewController alloc] initWithNibName:@"ContactsViewController" bundle:nil];
-//    UITabBarItem* contactsItem = [[UITabBarItem alloc] initWithTitle:@"Collegues" image:[UIImage imageNamed:@"first"] tag:4];
-//    [contacts setTabBarItem:contactsItem];
-//    
-//    BrowseViewController* browse = [[BrowseViewController alloc] initWithNibName:@"BrowseViewController" bundle:nil];
-//    UITabBarItem* browseItem = [[UITabBarItem alloc] initWithTitle:@"Browse" image:[UIImage imageNamed:@"first"] tag:1];
-//    [browse setTabBarItem:browseItem];
-//    
-//    NewsFeedViewController* newsFeed = [[NewsFeedViewController alloc] initWithNibName:@"NewsFeedViewController" bundle:nil];
-//    UITabBarItem* newsFeedItem = [[UITabBarItem alloc] initWithTitle:@"News Feed" image:[UIImage imageNamed:@"first"] tag:1];
-//    
-//    [newsFeed setTabBarItem:newsFeedItem];
-//    NSArray* viewcontrollers = @[profile, browse, newsFeed, mesages, contacts];
-//    
-//    UITabBarController *tabBarController = (UITabBarController*)self.window.rootViewController;
-//    
-//    [tabBarController setViewControllers:viewcontrollers];
-//    [self setTabBarController:tabBarController];
-    
+    self.tabBarController = (UITabBarController*)self.window.rootViewController;
+    [self.window makeKeyAndVisible];
+    [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
     // Override point for customization after application launch.
     return YES;
 }
