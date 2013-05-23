@@ -8,6 +8,7 @@
 
 #import "RegisterViewController.h"
 #import "AppDelegate.h"
+#import "UIView+Utils.h"
 
 @interface RegisterViewController ()
 
@@ -16,6 +17,8 @@
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
 @property (nonatomic, strong) IBOutlet UIView* registerView;
 @property (nonatomic, strong) IBOutlet UIImageView* logo;
+@property (nonatomic, strong) UIView* loadingView;
+
 @end
 
 @implementation RegisterViewController
@@ -64,6 +67,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)acceptRegisterRequest
+{
+    [self.loadingView removeFromSuperview];
+    self.loadingView = nil;
+    [self.view setUserInteractionEnabled:YES];
+    NSString* title = @"An conformational email with more information was send to your email";
+    [UIView presentPositiveNotifyingViewWithTitle:title  andSize:CGSizeMake(150, 150) onView:self.view];
+}
+
 #pragma mark - Button Actions
 
 - (IBAction)doneButtonPressed:(id)sender
@@ -73,7 +85,10 @@
 
 - (IBAction)registerButtonPressed:(id)sender
 {
-    
+    self.loadingView = [UIView addLoadingViewWithTitle:@"Loading..." onView:self.view];
+    [self.view setUserInteractionEnabled:NO];
+    [self performSelector:@selector(acceptRegisterRequest) withObject:nil afterDelay:3.0f];
+
 }
 
 #pragma mark - Text Field Delegate

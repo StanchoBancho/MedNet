@@ -10,7 +10,7 @@
 
 @interface UIView (Utils)
 
-+(UIView*)presentPositiveNotifyingViewWithTitle:(NSString*)title onView:(UIView*)parentView;
++(UIView*)presentPositiveNotifyingViewWithTitle:(NSString*)title andSize:(CGSize)size onView:(UIView*)parentView;
 +(UIView*)addLoadingViewWithTitle:(NSString*)title onView:(UIView*)parentView;
 
 @end

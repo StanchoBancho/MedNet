@@ -19,7 +19,7 @@
 
 @property (nonatomic, strong) IBOutlet UIButton* loginButton;
 @property (nonatomic, strong) IBOutlet UIButton* dontHaveAnAccountButton;
-
+@property (nonatomic, strong) UIView* loadingView;
 @end
 
 @implementation LoginViewController
@@ -67,11 +67,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)acceptCredentials
+{
+    [self.loadingView removeFromSuperview];
+    self.loadingView = nil;
+    [self.view setUserInteractionEnabled:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - Button Actions
 
 -(IBAction)loginButtonPressed:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    self.loadingView = [UIView addLoadingViewWithTitle:@"Connecting" onView:self.view];
+    [self.view setUserInteractionEnabled:NO];
+    [self performSelector:@selector(acceptCredentials) withObject:nil afterDelay:3.0f];
 }
 
 #pragma mark - Text Field Delegate
