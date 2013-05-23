@@ -1,27 +1,24 @@
 //
-//  LoginViewController.m
+//  RegisterViewController.m
 //  DoctorsBreak
 //
-//  Created by Stanimir Nikolov on 5/8/13.
+//  Created by Stanimir Nikolov on 5/23/13.
 //  Copyright (c) 2013 Stanimir Nikolov. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "RegisterViewController.h"
 #import "AppDelegate.h"
 
-@interface LoginViewController ()<UITextFieldDelegate>
+@interface RegisterViewController ()
 
-@property (nonatomic, strong) IBOutlet UIView* credentialsView;
-@property (nonatomic, strong) IBOutlet UITextField* userName;
-@property (nonatomic, strong) IBOutlet UITextField* password;
+@property(nonatomic, strong) IBOutlet UIButton* registerButton;
+@property(nonatomic, strong) IBOutlet UIButton* doneButton;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
-
-@property (nonatomic, strong) IBOutlet UIButton* loginButton;
-@property (nonatomic, strong) IBOutlet UIButton* dontHaveAnAccountButton;
-
+@property (nonatomic, strong) IBOutlet UIView* registerView;
+@property (nonatomic, strong) IBOutlet UIImageView* logo;
 @end
 
-@implementation LoginViewController
+@implementation RegisterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,8 +36,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardIsDown) name:UIKeyboardWillHideNotification object:nil];
     // Do any additional setup after loading the view from its nib.
     
-    [self setupButtonBackGround:self.loginButton];
-    [self setupButtonBackGround:self.dontHaveAnAccountButton];
+    [self setupButtonBackGround:self.doneButton];
+    [self setupButtonBackGround:self.registerButton];
+
 }
 
 -(void)setupButtonBackGround:(UIButton*)button
@@ -68,9 +66,14 @@
 
 #pragma mark - Button Actions
 
--(IBAction)loginButtonPressed:(id)sender
+- (IBAction)doneButtonPressed:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)registerButtonPressed:(id)sender
+{
+    
 }
 
 #pragma mark - Text Field Delegate
@@ -81,9 +84,10 @@
     if(!isItIphone5){
         //animate moving login view
         [UIView animateWithDuration:0.3f animations:^{
-            CGRect frame = self.credentialsView.frame;
-            frame.origin.y -= 50.0f;
-            [self.credentialsView setFrame:frame];
+            CGRect frame = self.registerView.frame;
+            frame.origin.y -= 80.0f;
+            [self.registerView setFrame:frame];
+            [self.logo setAlpha:0.0f];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
             if(finished)
@@ -104,9 +108,10 @@
         //animate moving login view
         
         [UIView animateWithDuration:0.3f animations:^{
-            CGRect frame = self.credentialsView.frame;
-            frame.origin.y += 50.0f;
-            [self.credentialsView setFrame:frame];
+            CGRect frame = self.registerView.frame;
+            frame.origin.y += 80.0f;
+            [self.registerView setFrame:frame];
+            [self.logo setAlpha:1.0f];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
             if(finished)
@@ -136,4 +141,5 @@
 - (IBAction)didTapToResignFirsResponder:(id)sender {
     [self.view endEditing:NO];
 }
+
 @end

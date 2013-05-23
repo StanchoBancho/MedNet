@@ -409,20 +409,108 @@
             </objects>
             <point key="canvasLocation" x="-1031" y="-607"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="MtY-es-1X3">
             <objects>
-                <viewController id="mIY-UO-IJi" sceneMemberID="viewController">
+                <viewController id="mIY-UO-IJi" customClass="RegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCp-P0-xyP">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.jpg" id="fea-Pt-obI">
+                                <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="0fB-oj-YVd">
+                                <rect key="frame" x="15" y="108" width="290" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="17" id="FBI-gC-ea8">
+                                        <rect key="frame" x="5" y="20" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" minimumFontSize="17" id="UD3-D6-rp3">
+                                        <rect key="frame" x="5" y="58" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ATN-W4-8dy">
+                                        <rect key="frame" x="64" y="172" width="162" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="ILP-6O-wqt" eventType="touchUpInside" id="aXU-aN-owx"/>
+                                            <action selector="registerButtonPressed:" destination="mIY-UO-IJi" eventType="touchUpInside" id="vyP-pi-YFl"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" minimumFontSize="17" id="dzG-nF-zr4">
+                                        <rect key="frame" x="5" y="96" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Medic Number" minimumFontSize="17" id="SVV-rN-BCd">
+                                        <rect key="frame" x="5" y="134" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.47335522349999998" green="0.75803387759999996" blue="0.83069595029999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KHc-9R-mfv">
+                                <rect key="frame" x="15" y="479" width="290" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="mIY-UO-IJi" eventType="touchUpInside" id="W7N-cC-1mx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V6w-Ba-X2D" appends="YES" id="PbZ-xT-xzS"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="NC3-0o-oo5"/>
+                    <connections>
+                        <outlet property="doneButton" destination="KHc-9R-mfv" id="bmT-AF-pvu"/>
+                        <outlet property="logo" destination="fea-Pt-obI" id="K7O-EI-8S0"/>
+                        <outlet property="registerButton" destination="ATN-W4-8dy" id="T7D-vh-hiW"/>
+                        <outlet property="registerView" destination="0fB-oj-YVd" id="3OM-8a-GAZ"/>
+                        <outlet property="tapGesture" destination="V6w-Ba-X2D" id="DfQ-DX-Ma3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEi-NZ-gV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="V6w-Ba-X2D">
+                    <connections>
+                        <action selector="didTapToResignFirsResponder:" destination="mIY-UO-IJi" id="K21-9o-xgs"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-600" y="-607"/>
+            <point key="canvasLocation" x="-553" y="-613"/>
         </scene>
         <!--Navigation Controller - NewsFeed-->
         <scene sceneID="ela-Cm-M1f">
@@ -550,6 +638,7 @@
         <class className="ChangePasswordViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ChangePasswordViewController.h"/>
             <relationships>
+                <relationship kind="action" name="cancelButton:"/>
                 <relationship kind="outlet" name="textFieldConfirmedPass" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textFieldNewPass" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="textFieldOldPass" candidateClass="UITextField"/>
@@ -561,10 +650,11 @@
         <class className="LoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
             <relationships>
+                <relationship kind="action" name="didTapToResignFirsResponder:"/>
+                <relationship kind="action" name="loginButtonPressed:"/>
                 <relationship kind="outlet" name="credentialsView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="dontHaveAnAccountButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="password" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="tapGesture" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="userName" candidateClass="UITextField"/>
@@ -584,6 +674,19 @@
                 <relationship kind="outlet" name="email" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="officeHours" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="specialist" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RegisterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegisterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didTapToResignFirsResponder:"/>
+                <relationship kind="action" name="doneButtonPressed:"/>
+                <relationship kind="action" name="registerButtonPressed:"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="registerButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="registerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="tapGesture" candidateClass="UITapGestureRecognizer"/>
             </relationships>
         </class>
     </classes>
