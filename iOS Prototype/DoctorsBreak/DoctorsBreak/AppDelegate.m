@@ -21,6 +21,23 @@
 
 @implementation AppDelegate
 
+-(BOOL)isItIphone5
+{
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        if (screenSize.height > 480.0f) {
+            /*Do iPhone 5 stuff here.*/
+            return YES;
+        } else {
+            /*Do iPhone Classic stuff here.*/
+        }
+    } else {
+        /*Do iPad stuff here.*/
+    }
+    return NO;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.tabBarController = (UITabBarController*)self.window.rootViewController;

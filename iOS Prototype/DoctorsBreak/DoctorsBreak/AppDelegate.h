@@ -11,5 +11,5 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (assign, nonatomic) BOOL isItIphone5;
 @end

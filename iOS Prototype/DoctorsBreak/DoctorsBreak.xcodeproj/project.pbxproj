@@ -31,6 +31,10 @@
 		2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6983173E4CD0007200A4 /* ProfileViewController.m */; };
 		2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6989173E4D22007200A4 /* MessagesViewController.m */; };
 		2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC698A173E4D22007200A4 /* MessagesViewController.xib */; };
+		2EFB5FF1174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FED174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png */; };
+		2EFB5FF2174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FEE174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png */; };
+		2EFB5FF3174E4E1100BA8F7F /* ButtonBackGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */; };
+		2EFB5FF4174E4E1100BA8F7F /* ButtonBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FF0174E4E1100BA8F7F /* ButtonBackGround.png */; };
 		A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */; };
 		A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */; };
 		A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272917416F77004F4AB5 /* 1.jpg */; };
@@ -73,6 +77,10 @@
 		2EEC6988173E4D22007200A4 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		2EEC6989173E4D22007200A4 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		2EEC698A173E4D22007200A4 /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		2EFB5FED174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackGroundHighlighted@2x.png"; sourceTree = "<group>"; };
+		2EFB5FEE174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackGroundHighlighted.png; sourceTree = "<group>"; };
+		2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackGround@2x.png"; sourceTree = "<group>"; };
+		2EFB5FF0174E4E1100BA8F7F /* ButtonBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackGround.png; sourceTree = "<group>"; };
 		A4A6272417415A48004F4AB5 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-color-wallpaper-7.jpg"; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		2ED0C0F7173AF3C700661DF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EFB5FEC174E4D9800BA8F7F /* Buttons */,
 				2E759733174924A600594665 /* Logo.jpg */,
 				A4C17EE417400868002F922D /* images-1.jpeg */,
 				A4A6272917416F77004F4AB5 /* 1.jpg */,
@@ -253,6 +262,17 @@
 			name = Messages;
 			sourceTree = "<group>";
 		};
+		2EFB5FEC174E4D9800BA8F7F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB5FED174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png */,
+				2EFB5FEE174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png */,
+				2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */,
+				2EFB5FF0174E4E1100BA8F7F /* ButtonBackGround.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +341,10 @@
 				A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */,
 				A4A6272C17416F7F004F4AB5 /* 2.jpg in Resources */,
 				2E759734174924A600594665 /* Logo.jpg in Resources */,
+				2EFB5FF1174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png in Resources */,
+				2EFB5FF2174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png in Resources */,
+				2EFB5FF3174E4E1100BA8F7F /* ButtonBackGround@2x.png in Resources */,
+				2EFB5FF4174E4E1100BA8F7F /* ButtonBackGround.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
