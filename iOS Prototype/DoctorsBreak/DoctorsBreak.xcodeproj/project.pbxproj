@@ -36,6 +36,8 @@
 		2EFB5FF3174E4E1100BA8F7F /* ButtonBackGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */; };
 		2EFB5FF4174E4E1100BA8F7F /* ButtonBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FF0174E4E1100BA8F7F /* ButtonBackGround.png */; };
 		2EFB5FF7174E76D200BA8F7F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB5FF6174E76D200BA8F7F /* RegisterViewController.m */; };
+		2EFB5FFA174E7E7500BA8F7F /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB5FF9174E7E7500BA8F7F /* UIView+Utils.m */; };
+		2EFB5FFC174E7EC400BA8F7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB5FFB174E7EC400BA8F7F /* QuartzCore.framework */; };
 		A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */; };
 		A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */; };
 		A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4A6272917416F77004F4AB5 /* 1.jpg */; };
@@ -84,6 +86,9 @@
 		2EFB5FF0174E4E1100BA8F7F /* ButtonBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackGround.png; sourceTree = "<group>"; };
 		2EFB5FF5174E76D200BA8F7F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		2EFB5FF6174E76D200BA8F7F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		2EFB5FF8174E7E7500BA8F7F /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		2EFB5FF9174E7E7500BA8F7F /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		2EFB5FFB174E7EC400BA8F7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A4A6272417415A48004F4AB5 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		A4A6272517415A48004F4AB5 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		A4A6272717416A2F004F4AB5 /* Background-color-wallpaper-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Background-color-wallpaper-7.jpg"; sourceTree = "<group>"; };
@@ -97,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EFB5FFC174E7EC400BA8F7F /* QuartzCore.framework in Frameworks */,
 				2ED0C0CA173AF34D00661DF7 /* UIKit.framework in Frameworks */,
 				2ED0C0CC173AF34D00661DF7 /* Foundation.framework in Frameworks */,
 				2ED0C0CE173AF34D00661DF7 /* CoreGraphics.framework in Frameworks */,
@@ -126,6 +132,7 @@
 		2ED0C0C8173AF34D00661DF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EFB5FFB174E7EC400BA8F7F /* QuartzCore.framework */,
 				2ED0C0C9173AF34D00661DF7 /* UIKit.framework */,
 				2ED0C0CB173AF34D00661DF7 /* Foundation.framework */,
 				2ED0C0CD173AF34D00661DF7 /* CoreGraphics.framework */,
@@ -233,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				2ED0C0E1173AF34D00661DF7 /* MainStoryboard.storyboard */,
+				2EFB5FF8174E7E7500BA8F7F /* UIView+Utils.h */,
+				2EFB5FF9174E7E7500BA8F7F /* UIView+Utils.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -370,6 +379,7 @@
 				2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */,
 				A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */,
 				2EFB5FF7174E76D200BA8F7F /* RegisterViewController.m in Sources */,
+				2EFB5FFA174E7E7500BA8F7F /* UIView+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
