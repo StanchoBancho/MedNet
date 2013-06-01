@@ -30,7 +30,7 @@
         <scene sceneID="SgD-C8-mjm">
             <objects>
                 <navigationController definesPresentationContext="YES" id="DYf-ab-xX1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="wyN-zd-nLG"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="smile.png" id="wyN-zd-nLG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OSU-et-EeU">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -147,7 +147,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="7Zh-Hl-VMA"/>
                     <navigationItem key="navigationItem" title="Dr. Ivanov profile" id="P0t-Xa-64s"/>
                     <connections>
                         <outlet property="certificates" destination="1Gb-De-FNv" id="zEs-x1-qts"/>
@@ -160,11 +159,11 @@
             </objects>
             <point key="canvasLocation" x="679" y="2490"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Contacts-->
         <scene sceneID="Leh-fT-3Vu">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BkC-XW-ru9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="DC5-4s-7S9"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="globe.png" id="DC5-4s-7S9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fH8-wP-oN4">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -238,11 +237,11 @@
             </objects>
             <point key="canvasLocation" x="1121" y="1797"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Catalog-->
         <scene sceneID="TMM-8p-eSs">
             <objects>
                 <navigationController definesPresentationContext="YES" id="q42-0X-OUj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="2Nb-b2-gCg"/>
+                    <tabBarItem key="tabBarItem" title="Catalog" image="forum.png" id="2Nb-b2-gCg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oaa-Im-yfJ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -273,7 +272,7 @@
         <scene sceneID="ZiO-5T-N30">
             <objects>
                 <navigationController definesPresentationContext="YES" id="QRo-7x-8co" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Messages" id="5mn-OX-zy5"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="mail.png" id="5mn-OX-zy5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3gJ-qK-i2H">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -593,8 +592,12 @@
     </scenes>
     <resources>
         <image name="Hospitals.png" width="320" height="568"/>
+        <image name="forum.png" width="30" height="30"/>
+        <image name="globe.png" width="30" height="30"/>
         <image name="images-1.jpeg" width="225" height="225"/>
         <image name="logo_transparent_99x60.png" width="99" height="60"/>
+        <image name="mail.png" width="30" height="30"/>
+        <image name="smile.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="BrowseViewController" superclassName="UIViewController">
