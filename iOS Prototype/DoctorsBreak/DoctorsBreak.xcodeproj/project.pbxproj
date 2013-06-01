@@ -18,6 +18,9 @@
 		2E21DEDA175A6FCA002246F2 /* logo_transparent_99x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */; };
 		2E21DEDC175A789F002246F2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEDB175A789F002246F2 /* icon.png */; };
 		2E21DEDE175A78C1002246F2 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEDD175A78C1002246F2 /* icon@2x.png */; };
+		2E21DEE2175A8217002246F2 /* rss.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEE0175A8217002246F2 /* rss.png */; };
+		2E21DEE3175A8217002246F2 /* rss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEE1175A8217002246F2 /* rss@2x.png */; };
+		2E21DEEB175A87BC002246F2 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E21DEEA175A87BC002246F2 /* NewsFeedViewController.m */; };
 		2E759734174924A600594665 /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E759733174924A600594665 /* Logo.jpg */; };
 		2ED0C0CA173AF34D00661DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0C9173AF34D00661DF7 /* UIKit.framework */; };
 		2ED0C0CC173AF34D00661DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0CB173AF34D00661DF7 /* Foundation.framework */; };
@@ -36,8 +39,6 @@
 		2ED0C0FC173AF40A00661DF7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0C0FA173AF40A00661DF7 /* LoginViewController.m */; };
 		2EEC6970173E4A92007200A4 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC696E173E4A92007200A4 /* BrowseViewController.m */; };
 		2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC696F173E4A92007200A4 /* BrowseViewController.xib */; };
-		2EEC6976173E4AB1007200A4 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6974173E4AB1007200A4 /* NewsFeedViewController.m */; };
-		2EEC6977173E4AB1007200A4 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC6975173E4AB1007200A4 /* NewsFeedViewController.xib */; };
 		2EEC697F173E4BA8007200A4 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC697D173E4BA8007200A4 /* ContactsViewController.m */; };
 		2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6983173E4CD0007200A4 /* ProfileViewController.m */; };
 		2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6989173E4D22007200A4 /* MessagesViewController.m */; };
@@ -68,6 +69,10 @@
 		2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_transparent_99x60@2x.png"; sourceTree = "<group>"; };
 		2E21DEDB175A789F002246F2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		2E21DEDD175A78C1002246F2 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		2E21DEE0175A8217002246F2 /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rss.png; sourceTree = "<group>"; };
+		2E21DEE1175A8217002246F2 /* rss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rss@2x.png"; sourceTree = "<group>"; };
+		2E21DEE9175A87BC002246F2 /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
+		2E21DEEA175A87BC002246F2 /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
 		2E759733174924A600594665 /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo.jpg; sourceTree = "<group>"; };
 		2ED0C0C6173AF34D00661DF7 /* DoctorsBreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorsBreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED0C0C9173AF34D00661DF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -92,9 +97,6 @@
 		2EEC696D173E4A92007200A4 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
 		2EEC696E173E4A92007200A4 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
 		2EEC696F173E4A92007200A4 /* BrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseViewController.xib; sourceTree = "<group>"; };
-		2EEC6973173E4AB1007200A4 /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
-		2EEC6974173E4AB1007200A4 /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
-		2EEC6975173E4AB1007200A4 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 		2EEC697C173E4BA8007200A4 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		2EEC697D173E4BA8007200A4 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		2EEC6982173E4CD0007200A4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -150,6 +152,24 @@
 				2E21DEDB175A789F002246F2 /* icon.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		2E21DEE4175A821B002246F2 /* Tabbar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2E21DEE0175A8217002246F2 /* rss.png */,
+				2E21DEE1175A8217002246F2 /* rss@2x.png */,
+			);
+			name = "Tabbar Icons";
+			sourceTree = "<group>";
+		};
+		2E21DEE5175A8765002246F2 /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				2E21DEE9175A87BC002246F2 /* NewsFeedViewController.h */,
+				2E21DEEA175A87BC002246F2 /* NewsFeedViewController.m */,
+			);
+			name = NewsFeed;
 			sourceTree = "<group>";
 		};
 		2ED0C0BD173AF34D00661DF7 = {
@@ -211,6 +231,7 @@
 		2ED0C0F7173AF3C700661DF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E21DEE4175A821B002246F2 /* Tabbar Icons */,
 				2E21DEDF175A78C9002246F2 /* Icons */,
 				2E21DED7175A6FCA002246F2 /* logo_transparent_99x60.png */,
 				2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */,
@@ -257,9 +278,6 @@
 		2EEC6972173E4A9B007200A4 /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				2EEC6973173E4AB1007200A4 /* NewsFeedViewController.h */,
-				2EEC6974173E4AB1007200A4 /* NewsFeedViewController.m */,
-				2EEC6975173E4AB1007200A4 /* NewsFeedViewController.xib */,
 			);
 			name = NewsFeed;
 			sourceTree = "<group>";
@@ -275,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				2ED0C0F8173AF3E400661DF7 /* Login */,
+				2E21DEE5175A8765002246F2 /* NewsFeed */,
 				2EEC6987173E4D11007200A4 /* Messages */,
 				2EEC6981173E4CC2007200A4 /* Profile */,
 				2EEC697B173E4B96007200A4 /* Contacts */,
@@ -397,7 +416,6 @@
 				2ED0C0EF173AF34D00661DF7 /* second.png in Resources */,
 				2ED0C0F1173AF34D00661DF7 /* second@2x.png in Resources */,
 				2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */,
-				2EEC6977173E4AB1007200A4 /* NewsFeedViewController.xib in Resources */,
 				2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */,
 				A4C17EE517400868002F922D /* images-1.jpeg in Resources */,
 				A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */,
@@ -419,6 +437,8 @@
 				2E21DEDA175A6FCA002246F2 /* logo_transparent_99x60@2x.png in Resources */,
 				2E21DEDC175A789F002246F2 /* icon.png in Resources */,
 				2E21DEDE175A78C1002246F2 /* icon@2x.png in Resources */,
+				2E21DEE2175A8217002246F2 /* rss.png in Resources */,
+				2E21DEE3175A8217002246F2 /* rss@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,13 +453,13 @@
 				2ED0C0DA173AF34D00661DF7 /* AppDelegate.m in Sources */,
 				2ED0C0FC173AF40A00661DF7 /* LoginViewController.m in Sources */,
 				2EEC6970173E4A92007200A4 /* BrowseViewController.m in Sources */,
-				2EEC6976173E4AB1007200A4 /* NewsFeedViewController.m in Sources */,
 				2EEC697F173E4BA8007200A4 /* ContactsViewController.m in Sources */,
 				2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */,
 				2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */,
 				A4A6272617415A48004F4AB5 /* ChangePasswordViewController.m in Sources */,
 				2EFB5FF7174E76D200BA8F7F /* RegisterViewController.m in Sources */,
 				2EFB5FFA174E7E7500BA8F7F /* UIView+Utils.m in Sources */,
+				2E21DEEB175A87BC002246F2 /* NewsFeedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

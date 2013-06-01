@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hbU-XA-qVk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hbU-XA-qVk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller - NewsFeed-->
+        <!--Navigation Controller - News Feed-->
         <scene sceneID="RCy-D7-wdR">
             <objects>
                 <navigationController definesPresentationContext="YES" id="hbU-XA-qVk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="NewsFeed" id="do6-I5-4w6"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="rss.png" id="do6-I5-4w6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7L-gM-HQT">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -27,9 +27,15 @@
                     <view key="view" contentMode="scaleToFill" id="sZK-tS-Oak">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mCn-49-4OO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="NewsFeed" id="9U8-3o-xmK"/>
                     <navigationItem key="navigationItem" title="News Feed" id="V24-XA-4Ty"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSY-m9-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,6 +43,9 @@
             <point key="canvasLocation" x="689" y="-422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rss.png" width="30" height="30"/>
+    </resources>
     <classes>
         <class className="NewsFeedViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedViewController.h"/>

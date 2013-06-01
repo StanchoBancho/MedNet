@@ -15,7 +15,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xmr-HQ-gL1" kind="relationship" relationship="viewControllers" id="IaO-7l-52S"/>
                         <segue destination="q42-0X-OUj" kind="relationship" relationship="viewControllers" id="Yms-Oq-Q7K"/>
                         <segue destination="QRo-7x-8co" kind="relationship" relationship="viewControllers" id="CnS-8q-6jm"/>
                         <segue destination="BkC-XW-ru9" kind="relationship" relationship="viewControllers" id="u7t-d4-Ure"/>
@@ -509,38 +508,6 @@
             </objects>
             <point key="canvasLocation" x="-553" y="-613"/>
         </scene>
-        <!--Navigation Controller - NewsFeed-->
-        <scene sceneID="ela-Cm-M1f">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="xmr-HQ-gL1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="NewsFeed" id="OjQ-85-927"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sKG-lr-Fw2">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="TTk-iZ-SgU" kind="relationship" relationship="rootViewController" id="juI-wc-MSb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4f-7n-ZkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="175" y="-422"/>
-        </scene>
-        <!--News Feed View Controller - News Feed-->
-        <scene sceneID="6vQ-1M-6lb">
-            <objects>
-                <viewController id="TTk-iZ-SgU" customClass="NewsFeedViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i31-tf-Quw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="NewsFeed" id="8Od-iG-PS3"/>
-                    <navigationItem key="navigationItem" title="News Feed" id="oMN-Ch-7Gu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HZW-Gq-kpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="689" y="-422"/>
-        </scene>
         <!--Change Password View Controller-->
         <scene sceneID="w38-Ck-NS6">
             <objects>
@@ -661,9 +628,6 @@
         </class>
         <class className="MessagesViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MessagesViewController.h"/>
-        </class>
-        <class className="NewsFeedViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedViewController.h"/>
         </class>
         <class className="ProfileViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>

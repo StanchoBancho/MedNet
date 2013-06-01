@@ -42,6 +42,14 @@
 {
     self.tabBarController = (UITabBarController*)self.window.rootViewController;
     [self.window makeKeyAndVisible];
+    
+    NSMutableArray* tabbarViewControllers = [NSMutableArray arrayWithArray:self.tabBarController.viewControllers];
+    //set the newsfeed
+    UINavigationController* newsFeedNavigationController = [[UIStoryboard storyboardWithName:@"NewsFeed" bundle:nil] instantiateInitialViewController];
+
+    [tabbarViewControllers insertObject:newsFeedNavigationController atIndex:0];
+    [self.tabBarController setViewControllers:tabbarViewControllers];
+
     [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
     // Override point for customization after application launch.
     return YES;

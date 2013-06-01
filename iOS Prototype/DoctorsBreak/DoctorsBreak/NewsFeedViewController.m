@@ -10,6 +10,8 @@
 
 @interface NewsFeedViewController ()
 
+@property(nonatomic, strong) UITableView* newsFeedTableView;
+
 @end
 
 @implementation NewsFeedViewController
