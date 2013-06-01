@@ -9,9 +9,14 @@
 #import "RegisterViewController.h"
 #import "AppDelegate.h"
 #import "UIView+Utils.h"
+#import "QuartzCore/QuartzCore.h"
+
+#define kREGISTER_VIEW_ORIGIN_Y_OFFSET 60.0f
+
 
 @interface RegisterViewController ()
 
+@property (nonatomic, strong) IBOutlet UIImageView* backgroundImage;
 @property(nonatomic, strong) IBOutlet UIButton* registerButton;
 @property(nonatomic, strong) IBOutlet UIButton* doneButton;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
@@ -41,6 +46,9 @@
     
     [self setupButtonBackGround:self.doneButton];
     [self setupButtonBackGround:self.registerButton];
+    [self.backgroundImage setAlpha:0.7];
+    [self.registerView.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.registerView.layer setBorderWidth:1];
 
 }
 
@@ -100,9 +108,9 @@
         //animate moving login view
         [UIView animateWithDuration:0.3f animations:^{
             CGRect frame = self.registerView.frame;
-            frame.origin.y -= 80.0f;
+            frame.origin.y -= kREGISTER_VIEW_ORIGIN_Y_OFFSET;
             [self.registerView setFrame:frame];
-            [self.logo setAlpha:0.0f];
+            //[self.logo setAlpha:0.0f];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
             if(finished)
@@ -124,9 +132,9 @@
         
         [UIView animateWithDuration:0.3f animations:^{
             CGRect frame = self.registerView.frame;
-            frame.origin.y += 80.0f;
+            frame.origin.y += kREGISTER_VIEW_ORIGIN_Y_OFFSET;
             [self.registerView setFrame:frame];
-            [self.logo setAlpha:1.0f];
+            //[self.logo setAlpha:1.0f];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
             if(finished)

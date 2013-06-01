@@ -25,7 +25,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762" y="874"/>
+            <point key="canvasLocation" x="-2338" y="906"/>
         </scene>
         <!--Navigation Controller - Profile-->
         <scene sceneID="SgD-C8-mjm">
@@ -305,6 +305,7 @@
         <scene sceneID="WTO-Vz-iPP">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="VlH-wF-CTr" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kWk-2l-oPp">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -324,8 +325,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Hospitals.png" id="LAs-Yf-McX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7zH-9a-B5P">
-                                <rect key="frame" x="15" y="477" width="290" height="44"/>
+                                <rect key="frame" x="15" y="494" width="290" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <state key="normal" title="Don`t have an account?">
@@ -339,30 +344,30 @@
                                     <segue destination="mIY-UO-IJi" kind="push" id="6Zx-TE-r7T"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.jpg" id="hGv-5J-nhR">
-                                <rect key="frame" x="110" y="0.0" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" id="miT-WD-k19">
-                                <rect key="frame" x="15" y="150" width="290" height="160"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="miT-WD-k19">
+                                <rect key="frame" x="15" y="90" width="290" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_transparent_99x60.png" id="hGv-5J-nhR">
+                                        <rect key="frame" x="96" y="0.0" width="99" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" minimumFontSize="17" id="3ws-op-YD0">
-                                        <rect key="frame" x="5" y="20" width="280" height="30"/>
+                                        <rect key="frame" x="5" y="70" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" minimumFontSize="17" id="IQX-Ha-KjR">
-                                        <rect key="frame" x="5" y="65" width="280" height="30"/>
+                                        <rect key="frame" x="5" y="105" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ebp-Z5-srh">
-                                        <rect key="frame" x="64" y="106" width="162" height="44"/>
+                                        <rect key="frame" x="31" y="145" width="228" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <state key="normal" title="Log in">
@@ -377,7 +382,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47335522354457993" green="0.75803387756758123" blue="0.83069595025510201" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.97729823812204397" green="0.98014987244897955" blue="0.93033892374594174" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -391,6 +396,7 @@
                     <navigationItem key="navigationItem" id="L5b-3R-h1S"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="LAs-Yf-McX" id="hau-2O-va0"/>
                         <outlet property="credentialsView" destination="miT-WD-k19" id="DIp-Cq-3sZ"/>
                         <outlet property="dontHaveAnAccountButton" destination="7zH-9a-B5P" id="mwZ-l3-iof"/>
                         <outlet property="loginButton" destination="ebp-Z5-srh" id="aZ2-Yt-hHT"/>
@@ -417,30 +423,23 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo.jpg" id="fea-Pt-obI">
-                                <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Hospitals.png" id="1TL-sR-gRE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="0fB-oj-YVd">
-                                <rect key="frame" x="15" y="108" width="290" height="232"/>
+                                <rect key="frame" x="15" y="90" width="290" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="17" id="FBI-gC-ea8">
-                                        <rect key="frame" x="5" y="20" width="280" height="30"/>
+                                        <rect key="frame" x="5" y="70" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" minimumFontSize="17" id="UD3-D6-rp3">
-                                        <rect key="frame" x="5" y="58" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ATN-W4-8dy">
-                                        <rect key="frame" x="64" y="172" width="162" height="44"/>
+                                        <rect key="frame" x="64" y="145" width="162" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
                                         <state key="normal" title="Register">
@@ -455,25 +454,22 @@
                                             <action selector="registerButtonPressed:" destination="mIY-UO-IJi" eventType="touchUpInside" id="vyP-pi-YFl"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" minimumFontSize="17" id="dzG-nF-zr4">
-                                        <rect key="frame" x="5" y="96" width="280" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Medic Number" minimumFontSize="17" id="SVV-rN-BCd">
-                                        <rect key="frame" x="5" y="134" width="280" height="30"/>
+                                        <rect key="frame" x="5" y="105" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo_transparent_99x60.png" id="fea-Pt-obI">
+                                        <rect key="frame" x="95" y="0.0" width="99" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47335522349999998" green="0.75803387759999996" blue="0.83069595029999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.97729823810000005" green="0.98014987239999996" blue="0.93033892370000004" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KHc-9R-mfv">
-                                <rect key="frame" x="15" y="479" width="290" height="44"/>
+                                <rect key="frame" x="15" y="494" width="290" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <state key="normal" title="Done">
@@ -496,6 +492,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NC3-0o-oo5"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="1TL-sR-gRE" id="7Nm-GD-abx"/>
                         <outlet property="doneButton" destination="KHc-9R-mfv" id="bmT-AF-pvu"/>
                         <outlet property="logo" destination="fea-Pt-obI" id="K7O-EI-8S0"/>
                         <outlet property="registerButton" destination="ATN-W4-8dy" id="T7D-vh-hiW"/>
@@ -628,8 +625,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo.jpg" width="960" height="960"/>
+        <image name="Hospitals.png" width="320" height="568"/>
         <image name="images-1.jpeg" width="225" height="225"/>
+        <image name="logo_transparent_99x60.png" width="99" height="60"/>
     </resources>
     <classes>
         <class className="BrowseViewController" superclassName="UIViewController">
@@ -652,6 +650,7 @@
             <relationships>
                 <relationship kind="action" name="didTapToResignFirsResponder:"/>
                 <relationship kind="action" name="loginButtonPressed:"/>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="credentialsView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="dontHaveAnAccountButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
@@ -682,6 +681,7 @@
                 <relationship kind="action" name="didTapToResignFirsResponder:"/>
                 <relationship kind="action" name="doneButtonPressed:"/>
                 <relationship kind="action" name="registerButtonPressed:"/>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="logo" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="registerButton" candidateClass="UIButton"/>

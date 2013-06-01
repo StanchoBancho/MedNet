@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hbU-XA-qVk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - NewsFeed-->
+        <scene sceneID="RCy-D7-wdR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="hbU-XA-qVk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="NewsFeed" id="do6-I5-4w6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7L-gM-HQT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lMC-Kb-Bm8" kind="relationship" relationship="rootViewController" id="mCj-wY-yXn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Ed-rIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="-422"/>
+        </scene>
+        <!--News Feed View Controller - News Feed-->
+        <scene sceneID="VyW-AY-VAg">
+            <objects>
+                <viewController id="lMC-Kb-Bm8" customClass="NewsFeedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZK-tS-Oak">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="NewsFeed" id="9U8-3o-xmK"/>
+                    <navigationItem key="navigationItem" title="News Feed" id="V24-XA-4Ty"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSY-m9-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="-422"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NewsFeedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

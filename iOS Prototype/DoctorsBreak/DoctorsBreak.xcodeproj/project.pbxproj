@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E21DEC9175A5E03002246F2 /* NewsFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEC8175A5E03002246F2 /* NewsFeed.storyboard */; };
+		2E21DECC175A6471002246F2 /* Hospitals@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DECB175A6471002246F2 /* Hospitals@2x.png */; };
+		2E21DECE175A64AB002246F2 /* Hospitals.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DECD175A64AB002246F2 /* Hospitals.png */; };
+		2E21DED1175A6D85002246F2 /* logo_white_75x45.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DECF175A6D85002246F2 /* logo_white_75x45.png */; };
+		2E21DED2175A6D85002246F2 /* logo_white_75x45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED0175A6D85002246F2 /* logo_white_75x45@2x.png */; };
+		2E21DED5175A6E05002246F2 /* logo_transparent_75x45.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED3175A6E05002246F2 /* logo_transparent_75x45.png */; };
+		2E21DED6175A6E05002246F2 /* logo_transparent_75x45@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED4175A6E05002246F2 /* logo_transparent_75x45@2x.png */; };
+		2E21DED9175A6FCA002246F2 /* logo_transparent_99x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED7175A6FCA002246F2 /* logo_transparent_99x60.png */; };
+		2E21DEDA175A6FCA002246F2 /* logo_transparent_99x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */; };
 		2E759734174924A600594665 /* Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E759733174924A600594665 /* Logo.jpg */; };
 		2ED0C0CA173AF34D00661DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0C9173AF34D00661DF7 /* UIKit.framework */; };
 		2ED0C0CC173AF34D00661DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED0C0CB173AF34D00661DF7 /* Foundation.framework */; };
@@ -46,6 +55,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E21DEC8175A5E03002246F2 /* NewsFeed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsFeed.storyboard; sourceTree = "<group>"; };
+		2E21DECB175A6471002246F2 /* Hospitals@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hospitals@2x.png"; sourceTree = "<group>"; };
+		2E21DECD175A64AB002246F2 /* Hospitals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hospitals.png; sourceTree = "<group>"; };
+		2E21DECF175A6D85002246F2 /* logo_white_75x45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_white_75x45.png; sourceTree = "<group>"; };
+		2E21DED0175A6D85002246F2 /* logo_white_75x45@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_white_75x45@2x.png"; sourceTree = "<group>"; };
+		2E21DED3175A6E05002246F2 /* logo_transparent_75x45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_transparent_75x45.png; sourceTree = "<group>"; };
+		2E21DED4175A6E05002246F2 /* logo_transparent_75x45@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_transparent_75x45@2x.png"; sourceTree = "<group>"; };
+		2E21DED7175A6FCA002246F2 /* logo_transparent_99x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_transparent_99x60.png; sourceTree = "<group>"; };
+		2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_transparent_99x60@2x.png"; sourceTree = "<group>"; };
 		2E759733174924A600594665 /* Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo.jpg; sourceTree = "<group>"; };
 		2ED0C0C6173AF34D00661DF7 /* DoctorsBreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoctorsBreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED0C0C9173AF34D00661DF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E21DECA175A6463002246F2 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				2E21DECD175A64AB002246F2 /* Hospitals.png */,
+				2E21DECB175A6471002246F2 /* Hospitals@2x.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
 		2ED0C0BD173AF34D00661DF7 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +198,13 @@
 		2ED0C0F7173AF3C700661DF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E21DED7175A6FCA002246F2 /* logo_transparent_99x60.png */,
+				2E21DED8175A6FCA002246F2 /* logo_transparent_99x60@2x.png */,
+				2E21DED3175A6E05002246F2 /* logo_transparent_75x45.png */,
+				2E21DED4175A6E05002246F2 /* logo_transparent_75x45@2x.png */,
+				2E21DECF175A6D85002246F2 /* logo_white_75x45.png */,
+				2E21DED0175A6D85002246F2 /* logo_white_75x45@2x.png */,
+				2E21DECA175A6463002246F2 /* Backgrounds */,
 				2EFB5FEC174E4D9800BA8F7F /* Buttons */,
 				2E759733174924A600594665 /* Logo.jpg */,
 				A4C17EE417400868002F922D /* images-1.jpeg */,
@@ -240,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				2ED0C0E1173AF34D00661DF7 /* MainStoryboard.storyboard */,
+				2E21DEC8175A5E03002246F2 /* NewsFeed.storyboard */,
 				2EFB5FF8174E7E7500BA8F7F /* UIView+Utils.h */,
 				2EFB5FF9174E7E7500BA8F7F /* UIView+Utils.m */,
 			);
@@ -359,6 +394,15 @@
 				2EFB5FF2174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png in Resources */,
 				2EFB5FF3174E4E1100BA8F7F /* ButtonBackGround@2x.png in Resources */,
 				2EFB5FF4174E4E1100BA8F7F /* ButtonBackGround.png in Resources */,
+				2E21DEC9175A5E03002246F2 /* NewsFeed.storyboard in Resources */,
+				2E21DECC175A6471002246F2 /* Hospitals@2x.png in Resources */,
+				2E21DECE175A64AB002246F2 /* Hospitals.png in Resources */,
+				2E21DED1175A6D85002246F2 /* logo_white_75x45.png in Resources */,
+				2E21DED2175A6D85002246F2 /* logo_white_75x45@2x.png in Resources */,
+				2E21DED5175A6E05002246F2 /* logo_transparent_75x45.png in Resources */,
+				2E21DED6175A6E05002246F2 /* logo_transparent_75x45@2x.png in Resources */,
+				2E21DED9175A6FCA002246F2 /* logo_transparent_99x60.png in Resources */,
+				2E21DEDA175A6FCA002246F2 /* logo_transparent_99x60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

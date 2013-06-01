@@ -9,9 +9,14 @@
 #import "LoginViewController.h"
 #import "AppDelegate.h"
 #import "UIView+Utils.h"
+#import "QuartzCore/QuartzCore.h"
+
+
+#define kCREDENTIAL_VIEW_ORIGIN_Y_OFFSET 60.0f
 
 @interface LoginViewController ()<UITextFieldDelegate>
 
+@property (nonatomic, strong) IBOutlet UIImageView* backgroundImage;
 @property (nonatomic, strong) IBOutlet UIView* credentialsView;
 @property (nonatomic, strong) IBOutlet UITextField* userName;
 @property (nonatomic, strong) IBOutlet UITextField* password;
@@ -40,8 +45,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardIsDown) name:UIKeyboardWillHideNotification object:nil];
     // Do any additional setup after loading the view from its nib.
     
+    
+    [self.credentialsView.layer setBorderColor:[[UIColor blackColor] CGColor]];
+    [self.credentialsView.layer setBorderWidth:1];
     [self setupButtonBackGround:self.loginButton];
     [self setupButtonBackGround:self.dontHaveAnAccountButton];
+    [self.backgroundImage setAlpha:0.7];
 }
 
 -(void)setupButtonBackGround:(UIButton*)button
@@ -93,7 +102,7 @@
         //animate moving login view
         [UIView animateWithDuration:0.3f animations:^{
             CGRect frame = self.credentialsView.frame;
-            frame.origin.y -= 50.0f;
+            frame.origin.y -= kCREDENTIAL_VIEW_ORIGIN_Y_OFFSET;
             [self.credentialsView setFrame:frame];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
@@ -116,7 +125,7 @@
         
         [UIView animateWithDuration:0.3f animations:^{
             CGRect frame = self.credentialsView.frame;
-            frame.origin.y += 50.0f;
+            frame.origin.y += kCREDENTIAL_VIEW_ORIGIN_Y_OFFSET;
             [self.credentialsView setFrame:frame];
             NSLog(@"credential view premesti se nagore :D");
         } completion:^(BOOL finished) {
