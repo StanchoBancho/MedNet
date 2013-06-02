@@ -130,6 +130,7 @@
 		A4A6272917416F77004F4AB5 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		A4A6272B17416F7F004F4AB5 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		A4C17EE417400868002F922D /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
+		A4D0811B175B52FA00983CB9 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +234,7 @@
 			children = (
 				2ED0C0D8173AF34D00661DF7 /* AppDelegate.h */,
 				2ED0C0D9173AF34D00661DF7 /* AppDelegate.m */,
+				A4D0811B175B52FA00983CB9 /* Constants.h */,
 				2EEC697A173E4B06007200A4 /* View */,
 				2EEC6978173E4AC3007200A4 /* Model */,
 				2EEC6979173E4ACF007200A4 /* Controller */,

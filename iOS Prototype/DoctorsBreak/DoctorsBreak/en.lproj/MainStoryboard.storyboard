@@ -168,74 +168,62 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vZG-Jw-XEf" kind="relationship" relationship="rootViewController" id="exC-Oq-XEa"/>
+                        <segue destination="7Oy-tF-IGp" kind="relationship" relationship="rootViewController" id="JnX-k3-ZFj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aC6-Nf-uGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="175" y="1796"/>
         </scene>
-        <!--Contacts View Controller - Collegues-->
-        <scene sceneID="mub-W1-IjD">
-            <objects>
-                <tableViewController id="vZG-Jw-XEf" customClass="ContactsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8TZ-u6-fli">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Collegue" textLabel="5PJ-LS-ief" imageView="nNe-WP-Ag3" style="IBUITableViewCellStyleDefault" id="EuF-i5-gOn">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5PJ-LS-ief">
-                                            <rect key="frame" x="53" y="0.0" width="237" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="images-1.jpeg" id="nNe-WP-Ag3">
-                                            <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <connections>
-                                    <segue destination="7Oy-tF-IGp" kind="push" id="Zbb-6t-sUr"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="vZG-Jw-XEf" id="lF3-xw-5NB"/>
-                            <outlet property="delegate" destination="vZG-Jw-XEf" id="tS0-Bd-PSB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Collegues" id="RbM-oe-A84"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OWj-SQ-rdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="679" y="1781"/>
-        </scene>
-        <!--View Controller-->
+        <!--Contacts View Controller - Contacts-->
         <scene sceneID="XrD-Uc-39x">
             <objects>
-                <viewController id="7Oy-tF-IGp" sceneMemberID="viewController">
+                <viewController id="7Oy-tF-IGp" customClass="ContactsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vxn-0d-KRR">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="l01-lM-gPY">
+                                <rect key="frame" x="0.0" y="44" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Oy-tF-IGp" id="j2a-Cb-Vrf"/>
+                                    <outlet property="delegate" destination="7Oy-tF-IGp" id="Gq0-Rc-8qU"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" id="Lwm-8Z-QOT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7Oy-tF-IGp" id="VTZ-US-q9z"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0gY-6y-GH1"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="0gY-6y-GH1">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="Opf-JA-pSg"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="6Gm-CT-ih3"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="gZa-Aw-78N" id="xp3-JV-GEm"/>
+                        <outlet property="tableView" destination="l01-lM-gPY" id="un8-Tm-0ac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THj-pL-62I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="gZa-Aw-78N">
+                    <connections>
+                        <outlet property="delegate" destination="7Oy-tF-IGp" id="jwc-Kb-qaC"/>
+                        <outlet property="searchBar" destination="Lwm-8Z-QOT" id="u54-LT-J7Q"/>
+                        <outlet property="searchContentsController" destination="7Oy-tF-IGp" id="Lgo-ja-V0y"/>
+                        <outlet property="searchResultsDataSource" destination="7Oy-tF-IGp" id="TJ9-zS-HC7"/>
+                        <outlet property="searchResultsDelegate" destination="7Oy-tF-IGp" id="MK2-A9-q89"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1121" y="1797"/>
+            <point key="canvasLocation" x="679" y="1796"/>
         </scene>
         <!--Navigation Controller - Catalog-->
         <scene sceneID="TMM-8p-eSs">
@@ -612,8 +600,11 @@
                 <relationship kind="outlet" name="textFieldOldPass" candidateClass="UITextField"/>
             </relationships>
         </class>
-        <class className="ContactsViewController" superclassName="UITableViewController">
+        <class className="ContactsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="LoginViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>

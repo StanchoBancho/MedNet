@@ -12,7 +12,7 @@
 #import "ContactsViewController.h"
 #import "BrowseViewController.h"
 #import "NewsFeedViewController.h"
-
+#import "Constants.h"
 @interface AppDelegate ()
 
 @property (nonatomic, strong) IBOutlet UITabBarController* tabBarController;
@@ -52,6 +52,12 @@
 
     [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
     // Override point for customization after application launch.
+    
+    // set contacts' names
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *contactsName = [NSMutableArray arrayWithObjects:@"Asen Bojilov", @"Valq Ivanova", @"Iordan Mihailov", @"Galq Milosheva", @"Daniel Georgiev", @"Ema Watson", @"Nikolai Danev", @"Petya Stoimenova", @"John Sahidji", @"Alex Raev", @"Iva Petrova", @"Maria Jolie", @"Nelly Pavlova", @"Darina Georgieva", @"Valentin Mihailov", @"Stilian Anastasov", nil];
+    [defaults setObject:[[NSArray alloc] initWithArray:contactsName] forKey:CONTACTS];
+    
     return YES;
 }
 							
