@@ -10,4 +10,6 @@
 
 @interface NewsFeedViewController : UIViewController
 
+@property(nonatomic, assign) BOOL isReloading;
+
 @end

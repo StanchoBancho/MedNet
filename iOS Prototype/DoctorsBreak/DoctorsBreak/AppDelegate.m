@@ -49,8 +49,8 @@
 
     [tabbarViewControllers insertObject:newsFeedNavigationController atIndex:0];
     [self.tabBarController setViewControllers:tabbarViewControllers];
-
-    [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
+    [self.tabBarController setSelectedIndex:0];
+  //  [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
     // Override point for customization after application launch.
     
     // set contacts' names
