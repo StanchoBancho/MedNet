@@ -10,6 +10,7 @@
 #import "EGORefreshTableHeaderView.h"
 #import "NewsFeed.h"
 #import "NewsFeedCell.h"
+#import "NewsFeedDetailsViewController.h"
 
 @interface NewsFeedViewController ()<EGORefreshTableHeaderDelegate>
 
@@ -134,7 +135,16 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NewsFeedDetailsViewController* detailNewsFeedViewController = [[UIStoryboard storyboardWithName:@"NewsFeed" bundle:nil] instantiateViewControllerWithIdentifier:@"NewsFeedDetailsViewController"];
+    [detailNewsFeedViewController setChoosedNewsFeed:self.dataSource[indexPath.row]];
+    [self.navigationController pushViewController:detailNewsFeedViewController animated:YES];
+}
+
 #pragma mark - EGORefreshTableHeaderDelegate
+
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view
 {
     [self reloadTableViewDataSource];

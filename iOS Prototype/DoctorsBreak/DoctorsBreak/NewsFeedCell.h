@@ -12,6 +12,6 @@
 
 @property(nonatomic, strong) IBOutlet UIImageView* authorImageView;
 @property(nonatomic, strong) IBOutlet UILabel* authorAndDateLabel;
-@property(nonatomic, strong) IBOutlet UITextView* contentTextView;
+@property(nonatomic, strong) IBOutlet UILabel* contentTextView;
 
 @end
