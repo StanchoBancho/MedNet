@@ -28,15 +28,15 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uPI-YC-QX1">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uPI-YC-QX1">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BUk-Nr-WNW" id="1wC-N5-Mn9"/>
                                     <outlet property="delegate" destination="BUk-Nr-WNW" id="5t9-75-Rvw"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85138313139999999" green="0.85138313139999999" blue="0.85138313139999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="uPI-YC-QX1" firstAttribute="bottom" secondItem="uHg-xT-hbF" secondAttribute="bottom" type="default" id="D5O-RF-PlH"/>
                             <constraint firstItem="uPI-YC-QX1" firstAttribute="trailing" secondItem="uHg-xT-hbF" secondAttribute="trailing" type="default" id="bkf-7T-qNL"/>

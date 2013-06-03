@@ -8,8 +8,10 @@
 
 #import "ContactsViewController.h"
 #import "Constants.h"
+#import "ContactCell.h"
 
 @interface ContactsViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -45,6 +47,9 @@ NSMutableArray *stateIndex;
             [stateIndex addObject:uniChar];
         }
     }
+    
+    UINib* cellNib = [UINib nibWithNibName:@"ContactCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:@"ContactCell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,37 +92,62 @@ NSMutableArray *stateIndex;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Collegue";
+    static NSString *CellIdentifier = @"ContactCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
+    ContactCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
+    [cell.contactImageView setImage:[UIImage imageNamed:@"Aurhot2"]];
+    
+    
+    
+    
     //---get the letter in the current section---
-    
     NSString *alphabet = [stateIndex objectAtIndex:[indexPath section]];
-    
     //---get all states beginning with the letter---
     NSPredicate *predicate =
     [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", alphabet];
     NSArray *states = [listOfStates filteredArrayUsingPredicate:predicate];
     
     if ([states count]>0) {
-        //---extract the relevant state from the states object---
+       //set the cell autor and proffesion title
         NSString *cellValue = [states objectAtIndex:indexPath.row];
-        cell.textLabel.text = cellValue;
-
-//        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+        NSString* cellTitle = [NSString stringWithFormat:@"%@\nSurgeon from Saint Anna University Hospital, Sofia", cellValue];
+        NSMutableAttributedString* contactTitle = [[NSMutableAttributedString alloc] initWithString:cellTitle];
+        [contactTitle addAttribute:NSFontAttributeName
+                       value:[UIFont fontWithName:@"Helvetica-Bold" size:18.0]
+                       range:NSMakeRange(0, cellValue.length)];
+        [contactTitle addAttribute:NSFontAttributeName
+                             value:[UIFont fontWithName:@"Helvetica" size:13.0]
+                             range:NSMakeRange(cellValue.length,  @"\nSurgeon".length)];
+        [contactTitle addAttribute:NSFontAttributeName
+                             value:[UIFont fontWithName:@"Helvetica" size:11.0]
+                             range:NSMakeRange(cellValue.length + @"\nSurgeon".length,  @" from ".length)];
+        NSUInteger len = cellValue.length + (@"\nSurgeon".length) + (@" from ".length);
+        [contactTitle addAttribute:NSFontAttributeName
+                             value:[UIFont fontWithName:@"Helvetica" size:13.0]
+                             range:NSMakeRange(len, cellTitle.length - len)];
+        [cell.contactTitle setAttributedText:contactTitle];
+        [cell.contactImageView setImage:[UIImage imageNamed:@"Author2"]];
+        
+       //set the cell autor reputation
+        NSString* reputationString = [NSString stringWithFormat:@"  Posts: 220               Reputation: 2450 pts."];
+        NSAttributedString* infoString = [[NSAttributedString alloc] initWithString:reputationString];
+        [cell.contactInfo setAttributedText:infoString];
+        
+        //set the rank image
+        
+        
+        
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
 }
 
-//---set the index for the table---
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return stateIndex;
-}
+////---set the index for the table---
+//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+//    return stateIndex;
+//}
 
 -(void) updateTableView
 {
