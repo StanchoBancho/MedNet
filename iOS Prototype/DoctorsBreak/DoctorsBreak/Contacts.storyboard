@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="20c-WZ-I5L">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Navigation Controller - Contacts-->
+        <scene sceneID="Q6C-6S-klL">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="20c-WZ-I5L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="globe.png" id="QTw-Y5-1Cw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DSe-OM-Qry">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BUk-Nr-WNW" kind="relationship" relationship="rootViewController" id="Zdu-h9-T8T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlx-OP-ivg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1233" y="-668"/>
+        </scene>
+        <!--Contacts View Controller - Contacts-->
+        <scene sceneID="ym3-Ak-5is">
+            <objects>
+                <viewController id="BUk-Nr-WNW" customClass="ContactsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHg-xT-hbF">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uPI-YC-QX1">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BUk-Nr-WNW" id="1wC-N5-Mn9"/>
+                                    <outlet property="delegate" destination="BUk-Nr-WNW" id="5t9-75-Rvw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uPI-YC-QX1" firstAttribute="bottom" secondItem="uHg-xT-hbF" secondAttribute="bottom" type="default" id="D5O-RF-PlH"/>
+                            <constraint firstItem="uPI-YC-QX1" firstAttribute="trailing" secondItem="uHg-xT-hbF" secondAttribute="trailing" type="default" id="bkf-7T-qNL"/>
+                            <constraint firstItem="uPI-YC-QX1" firstAttribute="leading" secondItem="uHg-xT-hbF" secondAttribute="leading" type="default" id="eyj-Rs-9sg"/>
+                            <constraint firstItem="uPI-YC-QX1" firstAttribute="top" secondItem="uHg-xT-hbF" secondAttribute="top" type="default" id="nvV-tq-VaV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contacts" id="mjW-yx-9a5">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Eef-fY-7tv"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="R9n-RU-s8d" id="dAh-2Z-CYf"/>
+                        <outlet property="tableView" destination="uPI-YC-QX1" id="H11-VI-NCk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGu-oK-obm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="R9n-RU-s8d">
+                    <connections>
+                        <outlet property="delegate" destination="BUk-Nr-WNW" id="TC0-YM-IG5"/>
+                        <outlet property="searchContentsController" destination="BUk-Nr-WNW" id="yd2-Jm-XL5"/>
+                        <outlet property="searchResultsDataSource" destination="BUk-Nr-WNW" id="FIY-i2-4q0"/>
+                        <outlet property="searchResultsDelegate" destination="BUk-Nr-WNW" id="uBE-aj-ajT"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-729" y="-668"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="ContactsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

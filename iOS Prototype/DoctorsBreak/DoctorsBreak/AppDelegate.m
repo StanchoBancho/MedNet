@@ -48,9 +48,18 @@
     UINavigationController* newsFeedNavigationController = [[UIStoryboard storyboardWithName:@"NewsFeed" bundle:nil] instantiateInitialViewController];
 
     [tabbarViewControllers insertObject:newsFeedNavigationController atIndex:0];
+    [self.tabBarController setSelectedIndex:0];
+    
+    //set the messages
+    UINavigationController* messagesNavigationController = [[UIStoryboard storyboardWithName:@"Contacts" bundle:nil] instantiateInitialViewController];
+    [tabbarViewControllers insertObject:messagesNavigationController atIndex:2];
+
     [self.tabBarController setViewControllers:tabbarViewControllers];
     [self.tabBarController setSelectedIndex:0];
-  //  [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
+    
+  
+    
+    //  [self.tabBarController performSegueWithIdentifier:@"LoginScreenSegue" sender:self];
     // Override point for customization after application launch.
     
     // set contacts' names

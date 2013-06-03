@@ -31,6 +31,7 @@
 		2E21DEFE175A951F002246F2 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEFC175A951F002246F2 /* smile.png */; };
 		2E21DEFF175A951F002246F2 /* smile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21DEFD175A951F002246F2 /* smile@2x.png */; };
 		2E5A081A175D190E005D99EF /* Author1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5A0819175D190E005D99EF /* Author1.png */; };
+		2E5A081E175D1DD1005D99EF /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5A081D175D1DD1005D99EF /* Contacts.storyboard */; };
 		2E67DC72175B35BD00B5F83F /* NewsFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E67DC71175B35BD00B5F83F /* NewsFeedCell.m */; };
 		2E67DC74175B35CC00B5F83F /* NewsFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E67DC73175B35CC00B5F83F /* NewsFeedCell.xib */; };
 		2E67DC7A175B4AD000B5F83F /* NewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E67DC79175B4AD000B5F83F /* NewsFeed.m */; };
@@ -62,7 +63,6 @@
 		2EEC697F173E4BA8007200A4 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC697D173E4BA8007200A4 /* ContactsViewController.m */; };
 		2EEC6985173E4CD0007200A4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6983173E4CD0007200A4 /* ProfileViewController.m */; };
 		2EEC698B173E4D22007200A4 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC6989173E4D22007200A4 /* MessagesViewController.m */; };
-		2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC698A173E4D22007200A4 /* MessagesViewController.xib */; };
 		2EFB5FF1174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FED174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png */; };
 		2EFB5FF2174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FEE174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png */; };
 		2EFB5FF3174E4E1100BA8F7F /* ButtonBackGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */; };
@@ -104,6 +104,7 @@
 		2E21DEFC175A951F002246F2 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
 		2E21DEFD175A951F002246F2 /* smile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smile@2x.png"; sourceTree = "<group>"; };
 		2E5A0819175D190E005D99EF /* Author1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Author1.png; sourceTree = "<group>"; };
+		2E5A081D175D1DD1005D99EF /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		2E67DC70175B35BC00B5F83F /* NewsFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCell.h; sourceTree = "<group>"; };
 		2E67DC71175B35BD00B5F83F /* NewsFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCell.m; sourceTree = "<group>"; };
 		2E67DC73175B35CC00B5F83F /* NewsFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedCell.xib; sourceTree = "<group>"; };
@@ -148,7 +149,6 @@
 		2EEC6983173E4CD0007200A4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		2EEC6988173E4D22007200A4 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		2EEC6989173E4D22007200A4 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
-		2EEC698A173E4D22007200A4 /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
 		2EFB5FED174E4E1100BA8F7F /* ButtonBackGroundHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackGroundHighlighted@2x.png"; sourceTree = "<group>"; };
 		2EFB5FEE174E4E1100BA8F7F /* ButtonBackGroundHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBackGroundHighlighted.png; sourceTree = "<group>"; };
 		2EFB5FEF174E4E1100BA8F7F /* ButtonBackGround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonBackGround@2x.png"; sourceTree = "<group>"; };
@@ -409,6 +409,7 @@
 				2ED0C0E1173AF34D00661DF7 /* MainStoryboard.storyboard */,
 				2E21DEC8175A5E03002246F2 /* NewsFeed.storyboard */,
 				2EFB5FF8174E7E7500BA8F7F /* UIView+Utils.h */,
+				2E5A081D175D1DD1005D99EF /* Contacts.storyboard */,
 				2EFB5FF9174E7E7500BA8F7F /* UIView+Utils.m */,
 				2EC20DFB175B923000EAB1BC /* StandartButton.h */,
 				2EC20DFC175B923000EAB1BC /* StandartButton.m */,
@@ -443,7 +444,6 @@
 			children = (
 				2EEC6988173E4D22007200A4 /* MessagesViewController.h */,
 				2EEC6989173E4D22007200A4 /* MessagesViewController.m */,
-				2EEC698A173E4D22007200A4 /* MessagesViewController.xib */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -516,7 +516,6 @@
 				2ED0C0E0173AF34D00661DF7 /* Default-568h@2x.png in Resources */,
 				2ED0C0E3173AF34D00661DF7 /* MainStoryboard.storyboard in Resources */,
 				2EEC6971173E4A92007200A4 /* BrowseViewController.xib in Resources */,
-				2EEC698C173E4D22007200A4 /* MessagesViewController.xib in Resources */,
 				A4C17EE517400868002F922D /* images-1.jpeg in Resources */,
 				A4A6272817416A2F004F4AB5 /* Background-color-wallpaper-7.jpg in Resources */,
 				A4A6272A17416F77004F4AB5 /* 1.jpg in Resources */,
@@ -558,6 +557,7 @@
 				2EC20E0D175B975900EAB1BC /* whiteArrow.png in Resources */,
 				2EC20E0E175B975900EAB1BC /* whiteArrow@2x.png in Resources */,
 				2E5A081A175D190E005D99EF /* Author1.png in Resources */,
+				2E5A081E175D1DD1005D99EF /* Contacts.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
