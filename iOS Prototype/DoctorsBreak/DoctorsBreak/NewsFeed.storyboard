@@ -167,6 +167,11 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="authorImageView" destination="h3V-Es-ofe" id="Bj8-GH-Ggu"/>
+                        <outlet property="contentLabel" destination="5F8-RW-Yus" id="4aG-ft-utv"/>
+                        <outlet property="contentTitle" destination="Tvg-8P-cCR" id="6cD-gT-60h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfG-FO-Ns6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,6 +181,28 @@
     <resources>
         <image name="rss.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewsFeedDetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="contentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="contentTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NewsFeedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="newsFeedTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="StandartButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StandartButton.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -10,6 +10,10 @@
 
 @interface NewsFeedDetailsViewController ()
 
+@property (strong, nonatomic) IBOutlet UIImageView *authorImageView;
+@property (strong, nonatomic) IBOutlet UILabel *contentTitle;
+@property (strong, nonatomic) IBOutlet UILabel *contentLabel;
+
 @end
 
 @implementation NewsFeedDetailsViewController
@@ -26,7 +30,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    [self.contentLabel setText:self.choosedNewsFeed.content];
+
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MMM-yyyy 'at' HH:mm"];
+    NSString* autorNameAndDateString = [NSString stringWithFormat:@"%@\n%@",self.choosedNewsFeed.author, [dateFormatter stringFromDate:self.choosedNewsFeed.date]];
+    NSMutableAttributedString* string = [[NSMutableAttributedString alloc] initWithString:autorNameAndDateString];
+    [string addAttribute:NSFontAttributeName
+                   value:[UIFont fontWithName:@"Helvetica-Bold" size:14.0]
+                   range:NSMakeRange(0, self.choosedNewsFeed.author.length)];
+    [self.contentTitle setAttributedText:string];
+    
+    [self.authorImageView setImage:self.choosedNewsFeed.authorImage];
+    
 }
 
 - (void)didReceiveMemoryWarning

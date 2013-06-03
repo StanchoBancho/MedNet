@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     
-    EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.newsFeedTableView.bounds.size.height, self.view.frame.size.width, self.newsFeedTableView.bounds.size.height)];
+    EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - 504, 320, 504)];
     view.delegate = self;
     self.refreshHeaderView = view;
     [self.newsFeedTableView addSubview:view];
@@ -85,7 +85,21 @@
 
 - (void)reloadTableViewDataSource
 {
-	
+    UIImage* authorOne = [UIImage imageNamed:@"Author1"];
+    NSString* authorOneName = @"Stanirmir Nikolov";
+    NSDate* date = [NSDate date];
+
+    
+    NewsFeed* one = [[NewsFeed alloc] init];
+    [one setAuthor:authorOneName];
+    [one setType:NFTypeMessage];
+    [one setAuthorImage:authorOne];
+    [one setContent:@"A \"cocktail\" of a drop of blood, a dribble of water, and a dose of DNA powder with gold particles may lead to quicker diagnosis and treatment of many infectious diseases in the near future."];
+    [one setDate:date];
+
+    
+	[self.dataSource insertObject:one atIndex:0];
+    
 	//  should be calling your tableviews data source model to reload
 	//  put here just for demo
 	self.isReloading = YES;
