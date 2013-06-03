@@ -58,7 +58,7 @@
 		[self addSubview:label];
 //        NSLayoutConstraint* constraint = [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
         
-      //  [label addConstraint:constraint];
+          //  [label addConstraint:constraint];
 		_lastUpdatedLabel=label;
 		[label release];
 		

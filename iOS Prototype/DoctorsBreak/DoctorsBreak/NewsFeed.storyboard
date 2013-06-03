@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="lMC-Kb-Bm8" kind="relationship" relationship="rootViewController" id="mCj-wY-yXn"/>
+                        <segue destination="yre-gb-EQW" kind="relationship" relationship="rootViewController" id="CWd-or-fqi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiB-Ed-rIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -21,37 +21,26 @@
             <point key="canvasLocation" x="175" y="-422"/>
         </scene>
         <!--News Feed View Controller - News Feed-->
-        <scene sceneID="VyW-AY-VAg">
+        <scene sceneID="jYv-OY-cDN">
             <objects>
-                <viewController id="lMC-Kb-Bm8" customClass="NewsFeedViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sZK-tS-Oak">
+                <tableViewController id="yre-gb-EQW" customClass="NewsFeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tKy-su-tqD">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mCn-49-4OO">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="lMC-Kb-Bm8" id="nss-mA-wDP"/>
-                                    <outlet property="delegate" destination="lMC-Kb-Bm8" id="Mn8-hi-gja"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.85138313137755106" green="0.85138313137755106" blue="0.85138313137755106" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="mCn-49-4OO" firstAttribute="trailing" secondItem="sZK-tS-Oak" secondAttribute="trailing" type="default" id="dwN-bw-QWE"/>
-                            <constraint firstItem="mCn-49-4OO" firstAttribute="leading" secondItem="sZK-tS-Oak" secondAttribute="leading" type="default" id="r28-2V-C38"/>
-                            <constraint firstItem="mCn-49-4OO" firstAttribute="bottom" secondItem="sZK-tS-Oak" secondAttribute="bottom" type="default" id="uuM-Ye-HLw"/>
-                            <constraint firstItem="mCn-49-4OO" firstAttribute="top" secondItem="sZK-tS-Oak" secondAttribute="top" type="default" id="ynP-gr-RfJ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="News Feed" id="V24-XA-4Ty"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.85138313139999999" green="0.85138313139999999" blue="0.85138313139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="yre-gb-EQW" id="beX-TA-kbK"/>
+                            <outlet property="delegate" destination="yre-gb-EQW" id="hTr-5G-ILk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News Feed" id="z2C-Oa-blA"/>
                     <connections>
-                        <outlet property="newsFeedTableView" destination="mCn-49-4OO" id="KRZ-Qk-uKj"/>
+                        <outlet property="newsFeedTableView" destination="tKy-su-tqD" id="wPX-qu-xta"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JSY-m9-xep" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JjY-CX-SIy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="-422"/>
+            <point key="canvasLocation" x="593" y="-422"/>
         </scene>
         <!--News Feed Details View Controller-->
         <scene sceneID="xcD-gp-NsS">
@@ -193,7 +182,7 @@
                 <relationship kind="outlet" name="contentTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="NewsFeedViewController" superclassName="UIViewController">
+        <class className="NewsFeedViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewsFeedViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="newsFeedTableView" candidateClass="UITableView"/>

@@ -31,6 +31,7 @@
 {
     [super viewDidLoad];
 
+    [self.navigationItem setTitle:@"Details"];
     [self.contentLabel setText:self.choosedNewsFeed.content];
 
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];

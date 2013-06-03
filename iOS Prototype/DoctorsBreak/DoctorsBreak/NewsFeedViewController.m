@@ -7,16 +7,14 @@
 //
 
 #import "NewsFeedViewController.h"
-#import "EGORefreshTableHeaderView.h"
 #import "NewsFeed.h"
 #import "NewsFeedCell.h"
 #import "NewsFeedDetailsViewController.h"
 
-@interface NewsFeedViewController ()<EGORefreshTableHeaderDelegate>
+@interface NewsFeedViewController ()
 
 @property(nonatomic, strong) IBOutlet UITableView* newsFeedTableView;
-@property(nonatomic, strong) EGORefreshTableHeaderView* refreshHeaderView;
-
+@property(nonatomic, strong) UIRefreshControl* refreshControl;
 @property(nonatomic, strong) NSDateFormatter* dateFormatter;
 @property(nonatomic, strong) NSMutableArray* dataSource;
 
@@ -37,10 +35,16 @@
 {
     [super viewDidLoad];
     
-    EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - 504, 320, 504)];
-    view.delegate = self;
-    self.refreshHeaderView = view;
-    [self.newsFeedTableView addSubview:view];
+
+
+    self.refreshControl = [[UIRefreshControl alloc] init];
+   // self.refreshControl.tintColor = [UIColor grayColor];
+    
+    [self.refreshControl addTarget:self action:@selector(refreshControlStatusChanged:) forControlEvents:UIControlEventValueChanged];
+    // Configure View Controller
+    
+
+    
     UINib* cellNib = [UINib nibWithNibName:@"NewsFeedCell" bundle:nil];
     [self.newsFeedTableView registerNib:cellNib forCellReuseIdentifier:@"NewsFeedCell"];
     
@@ -64,17 +68,24 @@
     [one setAuthor:authorOneName];
     [one setType:NFTypeMessage];
     [one setAuthorImage:authorOne];
-    [one setContent:@"A \"cocktail\" of a drop of blood, a dribble of water, and a dose of DNA powder with gold particles may lead to quicker diagnosis and treatment of many infectious diseases in the near future."];
+    [one setContent:@"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."];
     [one setDate:date];
     
     NewsFeed* two = [[NewsFeed alloc] init];
     [two setAuthor:authorTwoName];
     [two setType:NFTypeMessage];
     [two setAuthorImage:authorTwo];
-    [two setContent:@"New research published in Media Psychology suggests that looking at your Facebook profile can be psychologically good and bad for you. The finding revealed that checking your profile is capable of boosting your self esteem while at the same time reducing motivation."];
+    [two setContent:@"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."];
     [two setDate:date];
     
-    self.dataSource = [NSMutableArray arrayWithObjects:one, two, nil];
+    NewsFeed* three = [[NewsFeed alloc] init];
+    [three setAuthor:@"Dr. Steven Qualy"];
+    [three setType:NFTypeMessage];
+    [three setAuthorImage:authorTwo];
+    [three setContent:@"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."];
+    
+    [three setDate:date];
+    self.dataSource = [NSMutableArray arrayWithObjects:one, two, three, nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,8 +121,16 @@
 	
 	//  model should call this when its done loading
 	self.isReloading = NO;
-	[self.refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.newsFeedTableView];
 }
+
+#pragma mark - IBOutlets
+
+-(IBAction)refreshControlStatusChanged:(id)sender
+{
+    NSLog(@"zele %@",sender);
+    
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -157,38 +176,38 @@
     [self.navigationController pushViewController:detailNewsFeedViewController animated:YES];
 }
 
-#pragma mark - EGORefreshTableHeaderDelegate
-
-- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view
-{
-    [self reloadTableViewDataSource];
-	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
-}
-
-- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view
-{
-    return self.isReloading;
-}
-
-//optional
-- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view
-{
-    return [NSDate date];
-}
-
-#pragma mark - UIScrollViewDelegate Methods
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-	
-	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
-    
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-	
-	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
-	
-}
+//#pragma mark - EGORefreshTableHeaderDelegate
+//
+//- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view
+//{
+//    [self reloadTableViewDataSource];
+//	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+//}
+//
+//- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view
+//{
+//    return self.isReloading;
+//}
+//
+////optional
+//- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view
+//{
+//    return [NSDate date];
+//}
+//
+//#pragma mark - UIScrollViewDelegate Methods
+//
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//	
+//	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+//    
+//}
+//
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+//	
+//	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+//	
+//}
 
 
 @end
